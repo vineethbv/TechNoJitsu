@@ -1,0 +1,43 @@
+header{
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  color: white;
+  background: slategrey;
+}
+
+body{
+  background: black;
+}
+
+.related{
+  float: left;
+  border: 5px solid silver;
+  width: 20%;
+}
+
+.content{
+  background: darkslategrey;
+  color: white;
+  float: left;
+  border: 5px solid grey;
+  margin-left: 5px;
+  width: 75%;
+  font-size: 18px;
+}
+
+div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+:visited{
+  color: grey;
+}
+
+a{
+  color: cyan;
+}
