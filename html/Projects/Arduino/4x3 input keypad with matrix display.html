@@ -40,8 +40,24 @@
         <p>
           To start off with, the 4x3 input keypad consists of ROW1, ROW2, ROW3, ROW4, COLUMN1, COLUMN2, and COLUMN3, while an MAX7219 8x8 matrix display consists of Vcc, GND, DIN, CS, and CLK pins. So our connection diagram for this project with an Arduino (UNO in particular)
           goes as follows:
-          <img src="../img/MAX7219 Matrix Display.png">
-          <img src="../img/4x3 Keypad.png">
+          <table border="2">
+          <tr><th>ARDUINO BOARD</th><th>4X3 KEYPAD</th></tr>
+          <tr><td>2</td><td>Row 1</td></tr>
+          <tr><td>3</td><td>Row 2</td></tr>
+          <tr><td>4</td><td>Row 3</td></tr>
+          <tr><td>5</td><td>Row 4</td></tr>
+          <tr><td>6</td><td>Col 1</td></tr>
+          <tr><td>7</td><td>Col 2</td></tr>
+          <tr><td>8</td><td>Col 3</td></tr>
+          </table>
+          <table border="2">
+          <tr><th>ARDUINO BOARD</th><th>MAX7219</th></tr>
+          <tr><td>9</td><td>DIN</td></tr>
+          <tr><td>10</td><td>CS</td></tr>
+          <tr><td>11</td><td>CLOCK</td></tr>
+          <tr><td>GND</td><td>GND</td></tr>
+          <tr><td>5V</td><td>VCC</td></tr>
+          </table>
         </p>
         <p>
           The connections made between ports 11, 10 and 9 to DIN, CS, CLK respectively can also be altered based on the requirements of your projects and isn't a fixed connection. As always, GND on any component is connected to GND on your Arduino board.
