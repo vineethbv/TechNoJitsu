@@ -1,0 +1,231 @@
+<html>
+<head>
+	<title>loop</title>
+</head>
+<body>
+<h1 class="head">C Loops </h1>
+<div class="cont">	
+<p>There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.<br>
+A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages </p></div>
+<h2 class="cont">while loop in C</h2>
+<div class="cont"><p>A while loop statement in C programming language repeatedly executes a target statement as long as a given condition is true.<br><strong>syntax</strong><br><pre>	
+while(condition) 
+{ 
+   statement(s); 
+}</pre>
+<br>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any nonzero value. The loop iterates while the condition is true.<br> 
+When the condition becomes false, program control passes to the line immediately following the loop.</p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{
+   <i> /* local variable definition */</i>    
+int a = 10;  
+   <i>/* while loop execution */ </i>   
+ while( a < 20 )    
+ {       
+ printf("value of a: %d\n", a);       
+ a++;    
+}      
+return 0; 
+}
+</pre></div>
+<h2 class="cont">for loop in C </h2>
+<div clas="cont"><p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. <br>
+<strong>syntax</strong><br>
+<pre>
+for ( init; condition; increment )
+{
+</pre>	
+</p></div>
+<div class="orl">
+<ol>
+<li>The init step is executed first, and only once</li>
+<li>the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and flow of control jumps to the next statement just after the for loop</li>
+<li>the body of the for loop executes, the flow of control jumps back up to the increment statement.</li>
+<li>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself </li>
+</ol></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{
+    <i>/* for loop execution */</i>    
+for( int a = 10; a < 20; a = a + 1 )    
+{       
+printf("value of a: %d\n", a);    
+}      
+return 0; 
+} 
+</pre></div>
+<h2 class="cont">do-while loop in C </h2>
+<div class="cont"><p>A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.<br><strong>syntax</strong>
+<pre>
+do 
+{    
+	statement(s); 
+ 
+}while( condition );</pre> If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop execute again. This process repeats until the given condition becomes false. </p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{    
+	<i>/* local variable definition */ </i>   
+int a = 10;  
+   <i>/* do loop execution */</i>   
+ do
+ {        
+ printf("value of a: %d\n", a);
+ a = a + 1;
+}
+while( a < 20 );
+return 0;
+}
+</pre></div>
+<h2 class="cont">nested loops in C </h2>
+<div class="cont"><p>C programming language allows to use one loop inside another loop. Following section shows few examples to illustrate the concept. <br><strong>syntax</strong><br>
+The syntax for a nested for loop statement in C is as follows: <br>
+<pre>for ( init; condition; increment ) 
+{    
+	for ( init; condition; increment )    
+    {       statement(s);    
+    }    
+    statement(s); 
+}
+</pre>
+The syntax for a nested while loop statement in C programming language is as follows:<pre>
+while(condition) 
+{    
+	while(condition)    
+	{       
+		statement(s);    
+	}    
+	statement(s); 
+} </pre>
+The syntax for a nested do...while loop statement in C programming language is as follows:<pre>
+do 
+{    
+	statement(s);    
+	do    
+	{       
+		statement(s);    
+	}while( condition ); 
+ 
+}while( condition );</pre> </p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code">
+<pre>
+#include <stdio.h>   
+int main () 
+{   
+	<i> /* local variable definition */</i>    
+	int i, j;        
+	for(i=2; i<100; i++) 
+	{       
+		for(j=2; j <= (i/j); j++)         
+		if(!(i%j)) break;  <i>// if factor found, not prime</i>         
+		if(j > (i/j)) printf("%d is prime\n", i);    
+	}      
+	return 0; 
+}
+</pre></div> 
+<h2 class="cont">break statement in C </h2>
+<div class="cont"><p>The break statement in C programming language has the following two usages: </p></div>
+<div class="orl">
+<ol>
+	<li>When the break statement is encountered inside a loop, the loop is immediately terminated and program control resumes at the next statement following the loop. </li>
+	<li>It can be used to terminate a case in the switch statement (covered in the next chapter). </li>
+</ol></div>
+<div class="cont"><p><strong>syntax</strong>
+<pre>break;</pre></p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code">
+<pre> 	
+#include <stdio.h>   
+int main () 
+{   
+<i> /* local variable definition */ </i>   
+	int a = 10; 
+ 
+   <i>/* while loop execution */ </i>   
+   while( a < 20 )    
+   {       
+   	printf("value of a: %d\n", a);       
+   	a++;       
+   	if( a > 15)       
+   	{          
+   	<i>/* terminate the loop using break statement */</i>           
+   	break;       
+   }    
+}      
+return 0; 
+}
+</pre></div>
+<h2 class="cont">continue statement in C </h2>
+<div class="cont"><p>For the for loop, continue statement causes the conditional test and increment portions of the loop to execute. For the while and do...while loops, continue statement causes the program control passes to the conditional tests <br><strong>syntax</strong>
+<pre>continue;</pre></p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{   
+<i> /* local variable definition */</i>    
+int a = 10;
+ <i>  /* do loop execution */ </i>   
+ do    
+ {       
+ 	if( a == 15)       
+ 	{        
+ 	  <i>/* skip the iteration */ </i>         
+ 	  a = a + 1;          
+ 	  continue;       
+ 	}       
+ 	printf("value of a: %d\n", a);       
+ 	a++;          
+ }while( a < 20 );      
+ return 0; 
+} 
+</pre></div>
+<h2 class="cont">goto statement in C </h2>
+<div class="cont"><p>A goto statement in C programming language provides an unconditional jump from the goto to a labeled statement in the same function. <br>
+<strong>syntax</strong><br>
+<pre>goto label;
+ .. 
+ . 
+label: statement;</pre> </p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{    
+	int a = 10; 
+    LOOP:do    
+    {       
+    	if( a == 15)       
+    	{                 
+    		a = a + 1;          
+    		goto LOOP;       
+    	}       
+    	printf("value of a: %d\n", a);       
+    	a++;          
+    }while( a < 20 );      
+    return 0; 
+}
+</pre></div>
+<h2 class="cont">The Infinite Loop </h2>
+<div class="cont"><p>A loop becomes infinite loop if a condition never becomes false<br><strong>syntax</strong><pre>
+#include <stdio.h>   
+int main () 
+{
+	for( ; ; )    
+	{       
+		printf("This loop will run forever.\n");    
+	} 
+   return 0; 
+}
+</pre>
+</p></div>
+</body>
+</html>
