@@ -3,7 +3,7 @@
 <title>Basics of C</title>
 </head>
 <body>
-<h2 class="head">WHY C?</h2>
+<h2 id="whyc">WHY C?</h2>
 <div class="intro">
 <p>C was initially used for system development work, in particular the programs that makes up
 the operating system. C was adopted as a system development language because it
@@ -100,7 +100,7 @@ constant or variable or any other identifier names.</p> </div>
 </tr> 
 </table>
 </div>
-<h2>DATA TYPES</h2>
+<h2 id="datatype">DATA TYPES</h2>
 <div class="cont">
 <p>Data types refer to an extensive system used for <em> variables or functions of different types</em>. The type of a variable determines how
 much space it occupies in storage and how the bit pattern stored is interpreted.<br>
@@ -148,8 +148,15 @@ int main()
 }</pre>
 </div>
 <div class="cont">
-<p>OUTPUT: Storage size for int : 2<br><br><br>Here <strong>sizeof()</strong> is an already existing function which accepts a data type as its input and 
+<p>OUTPUT: <br>Storage size for int : 2<br><br><br>Here <strong>sizeof()</strong> is an already existing function which accepts a data type as its input and 
 shows the size of the data type in terms of bytes.</p> </div>
+<h3 id="char">Character type</h3>
+<div class="cont">
+    <p>The character is a single byte data variable which contains a character which could be any alphanumeric value or special characters.<br><strong>Example :</strong></p>
+</div>
+<div class="code">
+char c ;
+</div>
 <h3>Float Types</h3>
 <table>
 <tr>
@@ -161,7 +168,7 @@ shows the size of the data type in terms of bytes.</p> </div>
 <tr>
 <td>long double </td><td>10 byte</td><td> 3.4E-4932 to 1.1E+4932</td><td> 19 decimal places</td></tr>
 </table>
-<h2>VARIABLES</h2>
+<h2 id="variable">VARIABLES</h2>
 <div class="cont">
     <p>A variable is nothing but a name given to a storage area that our programs can
         manipulate. Each variable in C has a specific type, which determines the size and layout of
@@ -215,7 +222,7 @@ shows the size of the data type in terms of bytes.</p> </div>
     Here <strong>r value</strong> is <strong>20</strong> and the <strong>l value</strong> is the <strong>memory location/address value</strong> 
     of the variable.</p>
 </div>
-<h2 class="head">CONSTANTS</h2>
+<h2 id="constant">CONSTANTS</h2>
 <div class="cont">
     <p>The constants refer to fixed values that the program may not alter during its
        execution. These fixed values are also called literals.<br>
@@ -249,9 +256,8 @@ return 0;
         <p>This is used in code for making general constant value where the value assigned to the quantity which could be anything.<br></p>
         <span class="code">#define pi 3.14159</span>
     </div>
-
 <div class="head">	
-<h2>c operator</h2></div>
+<h2 id="operator"> C OPERATOR</h2></div>
 <div class="cont">	<p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C language is rich in built-in operators and provides the following types of operators:</p></div>
 <div class="unl">
 <ul style="list-style-type:disc">
@@ -263,7 +269,7 @@ return 0;
 <li>Misc Operators </li> 
 </ul>
 <p>This tutorial will explain the arithmetic, relational, logical, bitwise, assignment and other operators one by one. </p></div><br>
-<h2 class="head">Arithmetic Operators</h2>
+<h3 class="head">Arithmetic Operators</h2>
 <div class="cont">
 <p>Following table shows all the arithmetic operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
 <div class="tbl"><table>
@@ -279,11 +285,9 @@ CHAPTER</td></tr>
 <div class="cont"><p>Try the following example to understand all the arithmetic operators available in C programming language: </p></div>
 <div class="code"><pre>
 #include <stdio.h> 
- 
 main()
 {
-    int a = 21;    int b = 10;    int c ; 
- 
+   int a = 21;    int b = 10;    int c ; 
     c = a + b;
     printf("Line 1 - Value of c is %d\n",c);
     c = a - b;
@@ -298,12 +302,12 @@ main()
     printf("Line 6 - Value of c is %d\n",c);
     c = a--;
     printf("Line 7 - Value of c is %d\n",c); 
- }
+    }
 </pre></div>
 <div class="cont" ><p>When you compile and execute the above program, it produces the following result:</p>
 <p>Line 1 - Value of c is 31<br>Line 2 - Value of c is 11 <br>Line 3 - Value of c is 210 <br>Line 4 - Value of c is 2 <br>Line 5 - Value of c is 1 
     <br>Line 6 - Value of c is 21 <br>Line 7 - Value of c is 22</p><br></div> 
-<h2>Relational Operator</h2>
+<h2 id="relationaloperator">Relational Operator</h2>
 <div class="cont">
 <p>Following table shows all the relational operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
 <div class="tbl"><table>
@@ -363,7 +367,8 @@ printf("Line 5 - b is either greater than  or equal to b\n");
 <div class="cont">
 <p>When you compile and execute the above program, it produces the following result:</p>
 <p> Line 1 - a is not equal to b <br>Line 2 - a is not less than b <br>Line 3 - a is greater than b <br>Line 4 - a is either less than or equal to  b <br>Line 5 - b is either greater than  or equal to b </p></div>
-<div class="cont"><h2>Logical Operators </h2>
+<h2 id="logicaloperator">Logical Operators </h2>
+<div class="cont"></div>
 <p>Following table shows all the logical operators supported by C language. Assume variable A holds 1 and variable B holds 0, then: </p></div>
 <div class="tbl"><table>
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
@@ -409,7 +414,8 @@ printf("Line 4 - Condition is true\n");
 </pre></div>
 <p>When you compile and execute the above program, it produces the following result: </p> 
 <div class="unl"><p>Line 1 - Value of c is 12<br>Line 2 - Value of c is 61 <br>Line 3 - Value of c is 49 <br>Line 4 - Value of c is -61 <br>Line 5 - Value of c is 240 <br>Line 6 - Value of c is 15</p> </div>
-<div class="cont"><h2>Assignment Operators </h2>
+<h2 id="assignmentoperator">Assignment Operators </h2>
+<div class="cont"></div>
 <p>There are following assignment operators supported by C language: </p></div>
 <div class="tbl"><table border="2">
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
@@ -462,15 +468,16 @@ main()
 </pre></div>
 <p>When you compile and execute the above program, it produces the following result:</p>
 <div class="unl"><p>Line 1 - =  Operator Example, Value of c = 21<br> Line 2 - += Operator Example, Value of c = 42<br> Line 3 - -= Operator Example, Value of c = 21<br> Line 4 - *= Operator Example, Value of c = 441<br> Line 5 - /= Operator Example, Value of c = 21<br> Line 6 - %= Operator Example, Value of c = 11<br> Line 7 - <<= Operator Example, Value of c = 44<br> Line 8 - >>= Operator Example, Value of c = 11<br>Line 9 - &= Operator Example, Value of c = 2<br> Line 10 - ^= Operator Example, Value of c = 0<br> Line 11 - |= Operator Example, Value of c = 2 </p></div>
-<div class="cont"><h2>Misc Operators >> sizeof & ternary </h2></div>
-<p>There are few other important operators including sizeof and ? : supported by C Language. </p>
+<h2 id="miscoperator">Misc Operators >> sizeof & ternary </h2>
+<div class="cont">
+<p>There are few other important operators including sizeof and ? : supported by C Language. </p></div>
 <div class="tbl"><table border="2">
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <tr><td>sizeof()</td> <td>Returns the size of an variable. </td> <td>sizeof(a), where a is integer, will return 4. </td></tr>
 <tr><td>&</td> <td>Returns the address of an variable. </td> <td>&a; will give actual address of the variable.</td></tr>
 <tr><td>*</td> <td>Pointer to a variable</td> <td>*a; will pointer to a variable. </td></tr>
 <tr><td>?:</td> <td>Conditional Expression</td> <td>If Condition is true ? Then value X : Otherwise value Y </td></tr></table></div>
-<h2>Operators Precedence in C</h2>
+<h2 id="operatorprecedence">Operators Precedence in C</h2>
 <p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.<br> For example, x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.<br> Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
 <div class="tbl"><table border="2">
 <tr><td><strong>category</strong></td> <td><strong>Operator</strong></td> <td><strong>associativity</strong></td></tr>
@@ -514,9 +521,797 @@ main()
 </pre></div>
 <p>When you compile and execute the above program, it produces the following result: </p>
 <div class="unl"><p>Value of (a + b) * c / d is : 90<br> Value of ((a + b) * c) / d is  : 90<br> Value of (a + b) * (c / d) is  : 90<br> Value of a + (b * c) / d is  : 50 </p></div>
-</body>
-</html>
+
+<h2 id="decision">DECISION MAKING IN C</h2>
+<div class="cont" id="condition">
+<p>
+Decision making structures require that the programmer specify one or more
+conditions to be evaluated or tested by the program, along with a statement or statements
+to be executed if the condition is determined to be true, and optionally, other statements to
+be executed if the condition is determined to be false.</p>
+<p>C programming language assumes any non-zero and non-null values as true, and if it is
+    either zero or null, then it is assumed as false value. C programming language provides
+    following types of decision making statements.
+</p>
+<h3 class="head">if statement</h3>
+<P>An if statement consists of a boolean expression followed by one or more statements.<br>
+    The syntax of an if statement in C programming language is:</P>
+<div class="code">
+<pre>
+if(boolean_expression)
+{
+ /* statement(s) will execute if the boolean expression is true */
+}
+</pre>
+</div>
+<p>If the boolean expression evaluates to true, then the block of code inside the if
+    statement will be executed. If boolean expression evaluates to false, then the first 
+    set of code after the end of the if statement (after the closing curly brace) will be executed.<br> Example:<br></p>
+<div class="code">
+<pre>
+#include <stdio.h>
+int main ()
+{
+ /* local variable definition */
+ int a = 10;
+ /* check the boolean condition using if statement */
+ if( a < 20 )
+ {
+ /* if condition is true then print the following */
+ printf("a is less than 20\n" );
+ }
+ printf("value of a is : %d\n", a);
+ return 0;
+}
+</pre><p>Output:<br></p>
+</div>
+<pre>
+a is less than 20;
+value of a is : 10
+</pre>
+<h3 class="head" id="ifelse">if...else statement</h3>
+<p>An if statement can be followed by an optional else statement, which executes when the
+    boolean expression is false.<br>Syntax is:<br></p>
+<div class="code">
+<pre>
+    if(boolean_expression)
+    {
+     /* statement(s) will execute if the boolean expression is true */
+    }
+    else
+    {
+     /* statement(s) will execute if the boolean expression is false */
+    }
+</pre></div>
+<p>If the boolean expression evaluates to true, then the if block of code will be executed,
+    otherwise else block of code will be executed.<br>Example:<br></p>
+<div class="code">
+<pre>
+    #include <stdio.h>
+        int main ()
+        {
+         /* local variable definition */
+         int a = 100;
+         /* check the boolean condition */
+         if( a < 20 )
+         {
+         /* if condition is true then print the following */
+         printf("a is less than 20\n" );
+         }
+         else
+         {
+         /* if condition is false then print the following */
+         printf("a is not less than 20\n" );
+         }
+         printf("value of a is : %d\n", a);
+         return 0;
+        }   
+</pre>
+<p>Output :</p>
+<pre>
+    a is not less than 20;
+    value of a is : 100
+</pre>
+</div>
+<h3 class="head" id="ifelseifelse">if..else if..else statement</h3>
+<div class="cont" >
+<p>An if statement can be followed by an optional else if...else statement, which is very
+    useful to test various conditions using single if...else if statement.
+    When using if , else if , else statements there are few points to keep in mind:
+<ul>
+    <li>An if can have zero or one else's and it must come after any else if's.</li>
+    <li>An if can have zero to many else if's and they must come before the else.</li>
+    <li>Once an else if succeeds, none of the remaining else if's or else's will be tested.</li>
+</ul><br><strong>Syntax:</strong>
+</p></div>
+<div class="code">
+<pre>
+    if(boolean_expression 1)
+    {
+     /* Executes when the boolean expression 1 is true */
+    }
+    else if( boolean_expression 2)
+    {
+     /* Executes when the boolean expression 2 is true */
+    }
+    else if( boolean_expression 3)
+    {
+     /* Executes when the boolean expression 3 is true */
+    }
+    else
+    {
+     /* executes when the none of the above condition is true */
+    }
+    
+</pre>
+</div><P><strong>Example :</strong></P>
+<div class="code">
+<pre>
+#include <stdio.h>
+int main ()
+{
+ /* local variable definition */
+ int a = 100;
+ /* check the boolean condition */
+ if( a == 10 )
+ {
+ /* if condition is true then print the following */
+ printf("Value of a is 10\n" );
+ }
+ else if( a == 20 )
+ {
+ /* if else if condition is true */
+ printf("Value of a is 20\n" );
+}
+else if( a == 30 )
+{
+/* if else if condition is true */
+printf("Value of a is 30\n" );
+}
+else
+{
+/* if none of the conditions is true */
+printf("None of the values is matching\n" );
+}
+printf("Exact value of a is: %d\n", a );
+return 0;
+}
+</pre>
+</div>
+<p><strong>Output :<br></strong>
+<pre>
+None of the values is matching
+Exact value of a is: 100
+</pre></p>
+<h3 id="nestedif">Nested if statement</h3>
+<div class="cont">
+    <p>It is always legal in C programming to nest if-else statements, which means you can use
+        one if or else if statement inside another if or else if statement(s).<br><strong>Synntax :</strong></p>
+</div>
+<div class="code">
+<pre>
+if( boolean_expression 1)
+{
+ /* Executes when the boolean expression 1 is true */
+ if(boolean_expression 2)
+ {
+ /* Executes when the boolean expression 2 is true */
+ }
+}    
+</pre>
+</div>
+<p><strong>Example :</strong></p>
+<div class="code">
+<pre>
+#include <stdio.h>
+int main ()
+{
+ /* local variable definition */
+ int a = 100;
+ int b = 200;
+ /* check the boolean condition */
+ if( a == 100 )
+ {
+ /* if condition is true then check the following */
+ if( b == 200 )
+ {
+ /* if condition is true then print the following */
+ printf("Value of a is 100 and b is 200\n" );
+ }
+ }
+ printf("Exact value of a is : %d\n", a );
+ printf("Exact value of b is : %d\n", b );
+ return 0;
+}
+</pre>
+</div>
+<p><strong>Output: </strong></p>
+<pre>
+    Value of a is 100 and b is 200
+    Exact value of a is : 100
+    Exact value of b is : 200
+</pre>
+<h3 id="switch">switch statement</h3>
+<div class="cont">
+<P>A switch statement allows a variable to be tested for equality against a list of values. Each
+value is called a case, and the variable being switched on is checked for each switch case.<p><strong>Syntax :</strong></P>
+</div>
+<div class="code">
+<pre>
+    switch(expression){
+        case constant-expression :
+        statement(s);
+        break; /* optional */
+        case constant-expression :
+        statement(s);
+        break; /* optional */
+       
+        /* you can have any number of case statements */
+        default : /* Optional */
+        statement(s);
+       }
+</pre>
+</div>
+<div class="cont">
+Rules to be applied :
+<ul>
+    <li>The expression used in a switch statement must have an integral or enumerated type,
+        or be of a class type in which the class has a single conversion function to an integral or
+        enumerated type.</li>
+    <li>You can have any number of case statements within a switch. Each case is followed by
+        the value to be compared to and a colon.</li>
+    <li>The constant-expression for a case must be the same data type as the variable in the
+        switch, and it must be a constant or a literal.</li>
+    <li>When the variable being switched on is equal to a case, the statements following that
+        case will execute until a break statement is reached.</li>
+    <li>When a break statement is reached, the switch terminates, and the flow of control jumps
+        to the next line following the switch statement.</li>
+    <li>Not every case needs to contain a break. If no break appears, the flow of control will fall
+        through to subsequent cases until a break is reached.</li>
+    <li>A switch statement can have an optional default case, which must appear at the end of
+        the switch. The default case can be used for performing a task when none of the cases
+        is true. No break is needed in the default case.</li>
+</ul>
+<p><strong>Example :</strong></p>
+</div>
+<div class="code">
+<pre>
+#include <stdio.h>
+int main ()
+{
+ /* local variable definition */
+ char grade = 'B';
+ switch(grade)
+ {
+ case 'A' :
+ printf("Excellent!\n" );
+ break;
+ case 'B' :
+ case 'C' :
+ printf("Well done\n" );
+ break;
+ case 'D' :
+ printf("You passed\n" );
+ break;
+ case 'F' :
+ printf("Better try again\n" );
+ break;
+ default :
+ printf("Invalid grade\n" );
+ }
+ printf("Your grade is %c\n", grade );
+ return 0;
+}
+</pre>
+</div>
+<p><strong>Output :</strong></p>
+<pre>
+    Well done
+    Your grade is B
+</pre>
+<h3 id="nestedswitch">Nested switch statement</h3>
+<div class="cont">
+<p>It is possible to have a switch as part of the statement sequence of an outer switch.
+Even if the case constants of the inner and outer switch contain common values, no
+conflicts will arise.</p><strong>Synatx :</strong>
+</div>
+<div class="code">
+<pre>
+    switch(ch1) {
+        case 'A':
+        printf("This A is part of outer switch" );
+        switch(ch2) {
+        case 'A':
+        printf("This A is part of inner switch" );
+        break;
+        case 'B': /* case code */
+        }
+        break;
+        case 'B': /* case code */
+       }     
+</pre>
+</div>
+<strong>Example :</strong>
+<div class="code">
+<pre>
+#include <stdio.h>
+int main ()
+{
+ /* local variable definition */
+ int a = 100;
+ int b = 200;
+ switch(a) {
+ case 100:
+ printf("This is part of outer switch\n", a );
+ switch(b) {
+ case 200:
+ printf("This is part of inner switch\n", a );
+ }
+ }
+ printf("Exact value of a is : %d\n", a );
+ printf("Exact value of b is : %d\n", b );
+ return 0;
+}
+</pre>
+</div>
+<h3 id="?:">The ? : Operator</h3>
+<div class="cont">
+    <p>? : can be used as a replacement for if.. else statement.<br><strong>Syntax :</strong></p>
+</div>
+<div class="code">
+    Exp1 ? Exp2 : Exp3;
+</div>
+<div class="cont">
+    <p>The value of a ? expression is determined like this: Exp1 is evaluated. If it is true, then
+        Exp2 is evaluated and becomes the value of the entire ? expression. If Exp1 is false, then
+        Exp3 is evaluated and its value becomes the value of the expression.</p>
+</div>
+</div>
+
+<h1 id="loop">C Loops </h1>
+<div class="cont">	
+<p>There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.<br>
+A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages </p></div>
+<h2 id="whileloop">while loop in C</h2>
+<div class="cont"><p>A while loop statement in C programming language repeatedly executes a target statement as long as a given condition is true.<br><strong>Syntax</strong><br><pre>	
+while(condition) 
+{ 
+   statement(s); 
+}</pre>
+<br>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any nonzero value. The loop iterates while the condition is true.<br> 
+When the condition becomes false, program control passes to the line immediately following the loop.</p></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{
+   <i> /* local variable definition */</i>    
+int a = 10;  
+   <i>/* while loop execution */ </i>   
+ while( a < 20 )    
+ {       
+ printf("value of a: %d\n", a);       
+ a++;    
+}      
+return 0; 
+}
+</pre></div>
+<h2 id="forloop">for loop in C </h2>
+<div clas="cont"><p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. <br>
+<strong>Syntax</strong><br>
+<pre>
+for ( init; condition; increment )
+{
+</pre>	
+</p></div>
+<div class="orl">
+<ol>
+<li>The init step is executed first, and only once</li>
+<li>the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and flow of control jumps to the next statement just after the for loop</li>
+<li>the body of the for loop executes, the flow of control jumps back up to the increment statement.</li>
+<li>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself </li>
+</ol></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{
+ <i>/* for loop execution */</i>    
+for( int a = 10; a < 20; a = a + 1 )    
+{       
+printf("value of a: %d\n", a);    
+}      
+return 0; 
+} 
+</pre></div>
+<h2 id="dowhileloop">do-while loop in C </h2>
+<div class="cont"><p>A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.<br><strong>Syntax</strong>
+<pre>
+do 
+{    
+ statements;
+.
+.
+. 
+ 
+}while( condition );</pre> If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop execute again. This process repeats until the given condition becomes false. </p></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{    
+	<i>/* local variable definition */ </i>   
+int a = 10;  
+   <i>/* do loop execution */</i>   
+ do
+ {        
+ printf("value of a: %d\n", a);
+ a = a + 1;
+}
+while( a < 20 );
+return 0;
+}
+</pre></div>
+<h2 id="nestedloop">nested loops in C </h2>
+<div class="cont"><p>C programming language allows to use one loop inside another loop. Following section shows few examples to illustrate the concept. <br><br>
+The syntax for a nested <strong>for()</strong> loop statement in C is as follows: <br>
+<pre>for ( init; condition; increment ) 
+{    
+	for ( init; condition; increment )    
+    {       statement(s);    
+    }    
+    statement(s); 
+}
+</pre>
+The syntax for a nested <strong>while()</strong> loop statement in C programming language is as follows:<pre>
+while(condition) 
+{    
+	while(condition)    
+	{       
+		statement(s);    
+	}    
+	statement(s); 
+} </pre>
+The syntax for a nested <strong>do...while()</strong> loop statement in C programming language is as follows:<pre>
+do 
+{    
+	statement(s);    
+	do    
+	{       
+		statement(s);    
+	}while( condition ); 
+ 
+}while( condition );</pre> </p></div>
+<div class="cont"><p><strong>example</strong></p></div>
+<div class="code">
+<pre>
+#include <stdio.h>   
+int main () 
+{   
+	<i> /* local variable definition */</i>    
+	int i, j;        
+	for(i=2; i<100; i++) 
+	{       
+		for(j=2; j <= (i/j); j++)         
+		if(!(i%j)) break;  <i>// if factor found, not prime</i>         
+		if(j > (i/j)) printf("%d is prime\n", i);    
+	}      
+	return 0; 
+}
+</pre></div> 
+<h2 id="break">break statement in C </h2>
+<div class="cont"><p>The break statement in C programming language has the following three usages: </p></div>
+<div class="orl">
+<ol>
+	<li>When the break statement is encountered inside a loop, the loop is immediately terminated and program control resumes at the next statement following the loop. </li>
+	<li>It can be used to terminate a case in the switch statement (covered in the next chapter). </li>
+	<li>If you are using nested loops (i.e., one loop inside another loop), the break statement can be used to stop the execution of the innermost 
+	loop and start executing the next line of code after the block.</li>
+</ol>
+</div>
+<div class="cont"><p><strong>Syntax</strong>
+<pre>break;</pre></p></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code">
+<pre> 	
+#include <stdio.h>   
+int main () 
+{   
+<i> /* local variable definition */ </i>   
+	int a = 10; 
+ 
+   <i>/* while loop execution */ </i>   
+   while( a < 20 )    
+   {       
+   	printf("value of a: %d\n", a);       
+   	a++;       
+   	if( a > 15)       
+   	{          
+   	<i>/* terminate the loop using break statement */</i>           
+   	break;       
+   }    
+}      
+return 0; 
+}
+</pre></div>
+
+<h2 id="continue">continue statement in C </h2>
+<div class="cont">
+<p>The continue statement in C programming language works somewhat like the break statement. Instead of forcing termination, 
+    however, continue forces the next iteration of the loop to take place, skipping any code in between.</p>
+    <p>For the for loop, continue statement causes the conditional test and increment portions of the loop to execute. For the while and
+ do...while loops, continue statement causes the program control passes to the conditional tests.<br><strong>Syntax</strong>
+<pre>continue;</pre></p></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{   
+<i> /* local variable definition */</i>    
+int a = 10;
+ <i>  /* do loop execution */ </i>   
+ do    
+ {       
+ 	if( a == 15)       
+ 	{        
+ 	  <i>/* skip the iteration */ </i>         
+ 	  a = a + 1;          
+ 	  continue;       
+ 	}       
+ 	printf("value of a: %d\n", a);       
+ 	a++;          
+ }while( a < 20 );      
+ return 0; 
+} 
+</pre></div>
+
+<h2 id="goto">goto statement in C </h2>
+<div class="cont"><p>A goto statement in C programming language provides an unconditional jump from the goto to a labeled statement in the same function. <br>
+<strong>NOTE:</strong> Use of <strong>goto</strong> statement is highly discouraged in any programming language because
+it makes difficult to trace the control flow of a program, making the program hard to understand and hard to modify. Any program that uses a goto can be rewritten so that it
+doesn't need the goto.<br>
+<strong>Syntax</strong><br>
+<pre>goto label;
+ .. 
+ . 
+label: statement;</pre> </p></div>
+<div class="cont"><p><strong>Example</strong></p></div>
+<div class="code"><pre>
+#include <stdio.h>   
+int main () 
+{    
+	int a = 10; 
+    LOOP:do    
+    {       
+    	if( a == 15)       
+    	{                 
+    		a = a + 1;          
+    		goto LOOP;       
+    	}       
+    	printf("value of a: %d\n", a);       
+    	a++;          
+    }while( a < 20 );      
+    return 0; 
+}
+</pre></div>
+<h2 id="infiniteloop">The Infinite Loop </h2>
+<div class="cont"><p>A loop becomes infinite loop if a condition never becomes false<br><strong>syntax</strong>
+<pre>
+#include <stdio.h>   
+int main () 
+{
+	for(int i=1 ;i>0 ; )    
+	{       
+		printf("This loop will run forever.\n");    
+	} 
+   return 0; 
+}
+</pre>
+</p></div>
+
+<h2 id="function">C FUNCTIONS</h2>
+<div class="cont">
+<p>Function is a <strong>group of statements</strong> that together perform a task. Every C program has at least
+one function, which is <strong>main()</strong>, and all the most trivial programs can define additional
+functions.<br>
+You can <strong>divide up your code</strong> into separate <strong>functions</strong> How you divide up your code among
+different functions is up to you, but logically the <strong>division usually is so each function performs a specific task</strong>.<br>
+A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides
+the actual body of the function.
+The C standard library provides numerous built-in functions that your program can call. For
+example, function strcat() to concatenate two strings, function memcpy() to copy one
+memory location to another location and many more functions.<br>
+A function is known with various names like a method or a sub-routine or a procedure, etc.</p>
+</div>
+<h3>Defining a Function</h3>
+<div class="code"><pre>
+return_type function_name( parameter list )
+{
+ body of the function
+}</pre>>
+</div>
+<div class="cont">
+    <p>As per the synatx there are four parts in a function which are:</p>
+    <ul>
+        <li><strong>Return Type</strong> A function may return a value. The return_type is the data type of the
+            value the function returns. Some functions perform the desired operations without
+            returning a value. In this case, the return_type is the keyword void.</li>
+        <li><strong>Function Name:</strong> This is the actual name of the function. The function name and the
+            parameter list together constitute the function signature.</li>
+        <li><strong>Parameters:</strong> A parameter is like a placeholder. When a function is invoked, you pass a
+            value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function.
+            Parameters are optional; that is, a function may contain no parameters.</li>
+        <li><strong>Function Body</strong> The function body contains a collection of statements that define what
+            the function does.</li>
+    </ul>
+</div>
+<p>Example:<br> This function is to find the max between the two numbers.</p>
+<div class="code">
+<pre>
+/* function returning the max between two numbers */
+int max(int num1, int num2)
+{
+ /* local variable declaration */
+ int result;
+ if (num1 > num2)
+ result = num1;
+ else
+ result = num2;
+ return result;
+}
+</pre>
+</div>
+<h3 id="fdeclaration">FUNCTION DECLARATION</h3>
+<div class="cont">
+    <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+       A function declaration has the following parts:
+    </p>
+
+<div class="code">
+    return_type function_name( parameter list );
+</div>
+<p>For the above defined function max(), following is the function declaration:</p>
+<div class="code">int max(int num1, int num2);</div>
+<p>Parameter names are not important in function declaration only their type is required, so
+    following is also valid declaration:</p>
+    <div class="code">int max(int, int);</div>
+    <p>Function declaration is required when you define a function in one source file and you call that function in another file. In such case you should declare the function at the top of the
+        file calling the function.</p>
+</div>
+<h3 id="callingf">Calling A Function</h3>
+<div class="cont">
+<p>While creating a C function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task.</p>
+<p>When a program calls a function, program control is transferred to the called function. A called function performs defined task, and when its return statement is executed or when
+    its function-ending closing brace is reached, it returns program control back to the main program.</p>
+<p>To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. For example:</p>
+</div>
+<div class="code">
+    <pre>#include <stdio.h>
+        /* function declaration */
+        int max(int num1, int num2);
+        int main ()
+        {
+         /* local variable definition */
+         int a = 100;
+         int b = 200;
+         int ret;
+         /* calling a function to get max value */
+         ret = max(a, b);
+         printf( "Max value is : %d\n", ret );
+         return 0;
+        }
+        /* function returning the max between two numbers */
+        int max(int num1, int num2)
+        {
+         /* local variable declaration */
+         int result;
+         if (num1 > num2)
+         result = num1;
+         else
+         result = num2;
+         return result;
+        }
+</pre>
+</div>
+<p>Ouput:<br>Max value is : 200</p>
+<h3 id="farguments">FUNCTION ARGUMENTS</h3>
+<div class="cont">
+    <p>If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.
+        The formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit. 
+        While calling a function, there are two ways that arguments can be passed to a function:</p>
+</div>
+<dl>
+<dt>Function call by value </dt>
+<dd>
+The call by value method of passing arguments to a function copies the actual value of an
+argument into the formal parameter of the function. In this case, changes made to the
+parameter inside the function have no effect on the argument.
+By default, C programming language uses call by value method to pass arguments.
+<div class="code">
+<pre>
+#include <stdio.h>
+
+/* function definition to swap the values */
+void swap(int x, int y)
+{
+ int temp;
+ temp = x; /* save the value of x */
+ x = y; /* put y into x */
+ y = temp; /* put x into y */
+
+ return;
+}
+int main ()
+{
+ /* local variable definition */
+ int a = 100;
+ int b = 200;
+ printf("Before swap, value of a : %d\n", a );
+ printf("Before swap, value of b : %d\n", b );
+ /* calling a function to swap the values */
+ swap(a, b);
+ printf("After swap, value of a : %d\n", a );
+ printf("After swap, value of b : %d\n", b );
+ return 0;
+}
+</pre>
+</div>
+<p>Output:</p>
+<pre>
+After swap, value of a :100
+After swap, value of b :200
+</pre>
+</dd>
+<dd>
+<dt>Function call by reference</dt>
+<dd>
+<p>The call by reference method of passing arguments to a function copies the address of an argument into the formal parameter. Inside the function, the address is used to access the
+actual argument used in the call. This means that changes made to the parameter affect the passed argument.<br>
+To pass the value by reference, argument pointers are passed to the functions just like any other value. So accordingly you need to declare the function parameters as pointer
+types as in the following function swap().</p></dd>
+<div class="code">
+    <pre>
+            #include <stdio.h>
+            /* function definition to swap the values */
+            void swap(int *x, int *y)
+            {
+             int temp;
+             temp = *x; /* save the value at address x */
+             *x = *y; /* put y into x */
+             *y = temp; /* put x into y *
+             return;
+            }
+                
+            int main ()
+            {
+             /* local variable definition */
+             int a = 100;
+             int b = 200;
+             printf("Before swap, value of a : %d\n", a );
+             printf("Before swap, value of b : %d\n", b );
+             /* calling a function to swap the values.
+             * &a indicates pointer to a ie. address of variable a and
+             * &b indicates pointer to b ie. address of variable b.
+             */
+             swap(&a, &b);
+             printf("After swap, value of a : %d\n", a );
+             printf("After swap, value of b : %d\n", b );
+             return 0;
+             }
+
+    </pre>
+<p>Output:</p>
+<pre>
+    Before swap, value of a :100
+    Before swap, value of b :200
+    After swap, value of a :100
+    After swap, value of b :200</pre>
+</div>
+</dd>
+</dl>
 
 
+
 </body>
 </html>
+    
