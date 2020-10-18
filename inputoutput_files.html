@@ -1,0 +1,68 @@
+<html>
+<head><title>Input & Output</title></head>
+<body>	
+<h1 id="input&output">Input & Output</h1>
+<div class="intro"><p>When we are saying Input that means to feed some data into program. This can be given in the form of file or from command line. C programming language provides a set of uilt-in functions to read given input and feed it to the program as per requirement.then we are saying Output that means to display some data on screen, printer or in any file. C programming language povides a set of built-in functions to output the data on the computer screen as well as you can save that data in text or binary files.</p></div>
+<h2 class="cont">The Standard Files</h2>
+<div class="cont"><p>C programming language treats all the devices as files. So devices such as the display are addressed in the same way as files and following three file are automatically opened when a program executes to provide access to the keyboard and screen.</p></div>
+<div class="tbl"><table>
+<tr><td><strong>standard file</strong></td> <td><strong>file pointer</strong></td> <td><strong>device</strong></td></tr>	
+<tr><td>standard input</td> <td>stdin</td> <td>keyboard</td></tr>	
+<tr><td>standard output</td> <td>stdout</td> <td>screen</td></tr>	
+<tr><td>standard error</td> <td>stderr</td> <td>your screen</td></tr>
+</table>
+</div>
+<h2 class="cont">The getchar() & putchar() functions</h2>
+<div class="cont"><p>The int getchar(void) function reads the next available character from the screen and returns it as an integer. This function reads only single character at a time. You can use
+this method in the loop in case you want to read more than one characters from the screen.</p></div>
+<h3 class="cont">example</h3>
+<div class="code"><pre>
+#include <stdio.h>
+int main( )
+{
+    int c;
+    printf( "Enter a value :");
+    c = getchar( );
+    printf( "\nYou entered: ");
+    putchar( c );
+    return 0;
+}	
+</pre></div>
+<h2 class="cont">The gets() & puts() functions</h2>
+<div class="cont"><p>The char *gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF.
+The int puts(const char *s) function writes the string s and a trailing newline to stdout.
+</p></div>
+<h3 class="cont">example</h3>
+<div class="code"><pre>
+#include <stdio.h>
+int main( )
+{
+    char str[100];
+    printf( "Enter a value :");
+    str = gets( str );
+    printf( "\nYou entered: ");
+    puts( str );
+    return 0;
+}	
+</pre></div>
+<h2 class="cont">The scanf() and printf() functions</h2>
+<div class="cont"><p>The int scanf(const char *format, ...) function reads input from the standard input stream stdin and scans that input according to format provided.
+The int printf(const char *format, ...) function writes output to the standard output stream stdout and produces output according to a format provided.
+The format can be a simple constant string, but you can specify %s, %d, %c, %f, etc., to print or read strings, integer, character or float respectively. There are many other formatting options available which can be used based on requirements. For a complete detail you can refer to a man page for these function.
+</p></div>
+<h3 class="cont">example</h3>
+<div class="code"><pre>
+#include <stdio.h>
+int main( )
+{
+    char str[100];
+    int i;
+    printf( "Enter a value :");
+    scanf("%s %d", str, &i);
+    printf( "\nYou entered: %s, %d ", str, i);
+    return 0;
+}
+	
+</pre></div>	
+</body>
+</html>
