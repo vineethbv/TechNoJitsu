@@ -1,23 +1,24 @@
 <html>
 <head>
-	<title>C Operator</title>
+<title>C Operator</title>
 </head>
-<body>	
-<h1 class="head">c operator</h1>
-<div class="intro">	<p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C language is rich in built-in operators and provides the following types of operators:</p></div>
+<body>
+<h2 id="operator"> C OPERATOR</h2>
+<div class="cont">	<p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C language is rich in built-in operators and provides the following types of operators:</p></div>
 <div class="unl">
-<ul>
+<ul >
 <li>Arithmetic Operators </li>
 <li>Relational Operators </li> 
 <li>Logical Operators </li> 
 <li>Bitwise Operators </li> 
 <li>Assignment Operators </li> 
 <li>Misc Operators </li> 
-</ul></div>
-<div class="cont"><p>This tutorial will explain the arithmetic, relational, logical, bitwise, assignment and other operators one by one. </p></div>
-<h2 class="cont">Arithmetic Operators</h2>
-<div class="cont"><p>Following table shows all the arithmetic operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
-<div class="tbl"><table>
+</ul>
+<p>This tutorial will explain the arithmetic, relational, logical, bitwise, assignment and other operators one by one. </p></div><br>
+<h3 class="Aoperator">Arithmetic Operators</h2>
+<div class="cont">
+<p>Following table shows all the arithmetic operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
+<div><table>
 <tr>
 <td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <tr><td>+</td> <td>Adds two operands</td> <td>A + B will give 30 </td></tr>
@@ -30,13 +31,11 @@ CHAPTER</td></tr>
 <div class="cont"><p>Try the following example to understand all the arithmetic operators available in C programming language: </p></div>
 <div class="code"><pre>
 #include <stdio.h> 
- 
 main()
 {
-    int a = 21;    int b = 10;    int c ; 
- 
- c = a + b;
-     printf("Line 1 - Value of c is %d\n",c);
+   int a = 21;    int b = 10;    int c ; 
+    c = a + b;
+    printf("Line 1 - Value of c is %d\n",c);
     c = a - b;
     printf("Line 2 - Value of c is %d\n",c);
     c = a * b;
@@ -49,13 +48,15 @@ main()
     printf("Line 6 - Value of c is %d\n",c);
     c = a--;
     printf("Line 7 - Value of c is %d\n",c); 
- }
+    }
 </pre></div>
-<div class="cont"><p>When you compile and execute the above program, it produces the following result:</p></div>
-<div class="orl"><p>Line 1 - Value of c is 31<br>Line 2 - Value of c is 11 <br>Line 3 - Value of c is 210 <br>Line 4 - Value of c is 2 <br>Line 5 - Value of c is 1 <br>Line 6 - Value of c is 21 <br>Line 7 - Value of c is 22</p><br></div> 
-<h2 class="cont">Relational Operator</h2>
-<div class="cont"><p>Following table shows all the relational operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
-<div class="tbl"><table>
+<div class="cont" ><p>When you compile and execute the above program, it produces the following result:</p>
+<p>Line 1 - Value of c is 31<br>Line 2 - Value of c is 11 <br>Line 3 - Value of c is 210 <br>Line 4 - Value of c is 2 <br>Line 5 - Value of c is 1 
+    <br>Line 6 - Value of c is 21 <br>Line 7 - Value of c is 22</p><br></div> 
+<h2 id="Roperator">Relational Operator</h2>
+<div class="cont">
+<p>Following table shows all the relational operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p></div>
+<div><table>
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <td>==</td> <td>Checks if the values of two operands are equal or not, if yes then condition becomes true.</td> <td>(A == B) is not true.</td></tr>
 <tr>
@@ -109,16 +110,18 @@ if ( b >= a )
 printf("Line 5 - b is either greater than  or equal to b\n");
 }
 }</pre></div> 
-<div class="cont"><p>When you compile and execute the above program, it produces the following result:</p></div>
-<div class="orl"><p> Line 1 - a is not equal to b <br>Line 2 - a is not less than b <br>Line 3 - a is greater than b <br>Line 4 - a is either less than or equal to  b <br>Line 5 - b is either greater than  or equal to b </p></div>
-<h2 class="cont">Logical Operators </h2>
-<div class="cont"><p>Following table shows all the logical operators supported by C language. Assume variable A holds 1 and variable B holds 0, then: </p></div>
-<div class="tbl"><table>
+<div class="cont">
+<p>When you compile and execute the above program, it produces the following result:</p>
+<p> Line 1 - a is not equal to b <br>Line 2 - a is not less than b <br>Line 3 - a is greater than b <br>Line 4 - a is either less than or equal to  b <br>Line 5 - b is either greater than  or equal to b </p></div>
+<h2 id="Loperator">Logical Operators </h2>
+<div class="cont"></div>
+<p>Following table shows all the logical operators supported by C language. Assume variable A holds 1 and variable B holds 0, then: </p></div>
+<div></div><table>
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <tr><td>&&</td> <td>Called Logical AND operator. If both the operands are non-zero, then condition becomes true. </td> <td>(A && B) is false. </td></tr>
 <tr><td>||</td><td>Called Logical OR Operator. If any of the two operands is nonzero, then condition becomes true.</td><td>(A || B) is true</td></tr>
 <tr><td>!</td><td>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false</td><td>!(A && B) is true.</td> </tr></table></div>
-<div class="cont"><p>Try the following example to understand all the logical operators available in C programming language: </p></div>
+<p>Try the following example to understand all the logical operators available in C programming language: </p>
 <div class="code"><pre>
 #include <stdio.h> 
  
@@ -152,69 +155,15 @@ printf("Line 4 - Condition is true\n");
 }
 </pre></div>
 <p>When you compile and execute the above program, it produces the following result:</p>
-<div class="orl"><p> Line 1 - Condition is true <br>Line 2 - Condition is true <br>Line 3 - Condition is not true <br>Line 4 - Condition is true</p></div>
-<h2 class="cont">Bitwise Operators </h2>
-<div class="cont"><p>Bitwise operator works on bits and performs bit-by-bit operation. The truth tables for &, |, and ^ are as follows: </p></div>
-<div class="code"><table>
-<tr><td><strong>p</strong></td>  <td><strong>q</strong></td>  <td><strong>p&q</strong></td> <td><strong>p|q</strong></td>  <td><strong>p^q</strong></td></tr>
-<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
-<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
-</table></div>
-<div class="orl"><p>Assume if A = 60; and B = 13; now in binary format they will be as follows: </p>
-<ul>
-<li>A = 0011 1100</li> 
-<li>B = 0000 1101</li> 
-<li>A&B = 0000 1100</li> 
-<li>A|B = 0011 1101 </li>
-<li>A&B = 0000 1100</li> 
-<li>A|B = 0011 1101</li> </ul></div>
-<div class="cont"><p>The Bitwise operators supported by C language are listed in the following table. Assume variable A holds 60 and variable B holds 13, then: </p></div>
-<div class="tbl"><table>
-<tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
-<tr><td>&</td> <td>Binary AND Operator copies a bit to the result if it exists in both operands</td> <td>(A & B) will give 12, which is 0000 1100</td></tr>
-<tr><td>|</td> <td>Binary OR Operator copies a bit if it exists in either operand. </td> <td> (A | B) will give 61, which is 0011 1101 </td></tr>
-<tr><td>^</td> <td>Binary OR Operator copies a bit if it exists in either operand. </td> <td> (A ^ B) will give 49, which is 0011 0001 </td></tr>
-<tr><td>~</td> <td>Binary Ones Complement Operator is unary and has the effect of 'flipping' bits</td> <td>(~A) will give -60,which is 11000011</td></tr>
-<tr><td><<</td> <td>Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand</td> <td>A<<2 will give 240,which is 11110000</td></tr>
-<tr><td>>></td> <td>Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. </td> <td>A>>2 will give 15,which is 00001111</td></tr>
-</table></div>
-<div class="cont"><p>Try the following example to understand all the bitwise operators available in C programming language: </p></div>
-<div class="code"><pre>
-#include <stdio.h> 
- 
-main()
-{ 
- 
-   unsigned int a = 60;        <i>/* 60 = 0011 1100 */  </i>
-   unsigned int b = 13;        <i>/* 13 = 0000 1101 */  </i>
-   int c = 0;            
- 
-   c = a & b;                  <i>  /* 12 = 0000 1100 */</i>
-   printf("Line 1 - Value of c is %d\n",c); 
- 
-   c = a | b;                  <i>/* 61 = 0011 1101 */</i>
-   printf("Line 2 - Value of c is %d\n",c); 
- 
-   c = a ^ b;                   <i>  /* 49 = 0011 0001 */ </i>
-   printf("Line 3 - Value of c is %d\n",c); 
- 
-   c = ~a;                      <i>  /*-61 = 1100 0011 */ </i>
-   printf("Line 4 - Value of c is %d\n",c); 
- 
-   c = a << 2;                  <i> /* 240 = 1111 0000 */ </i>
-   printf("Line 5 - Value of c is %d\n",c); 
- 
-   c = a >> 2;                 <i> /* 15 = 0000 1111 */ </i>
-   printf("Line 6 - Value of c is %d\n",c);
-}
+<div class="cont"><p> Line 1 - Condition is true <br>Line 2 - Condition is true <br>Line 3 - Condition is not true <br>Line 4 - Condition is true</p></div>
+
 </pre></div>
-<div class="cont"><p>When you compile and execute the above program, it produces the following result: </p></div> 
-<div class="unl"><p>Line 1 - Value of c is 12<br>Line 2 - Value of c is 61 <br>Line 3 - Value of c is 49 <br>Line 4 - Value of c is -61 <br>Line 5 - Value of c is 240 <br>Line 6 - Value of c is 15</p> </div>
-<h2 class="cont">Assignment Operators </h2>
-<div ><p>There are following assignment operators supported by C language: </p></div>
-<div class="tbl"><table>
+<p>When you compile and execute the above program, it produces the following result: </p> 
+<div ><p>Line 1 - Value of c is 12<br>Line 2 - Value of c is 61 <br>Line 3 - Value of c is 49 <br>Line 4 - Value of c is -61 <br>Line 5 - Value of c is 240 <br>Line 6 - Value of c is 15</p> </div>
+<h2 id="Assignoperator">Assignment Operators </h2>
+<div class="cont"></div>
+<p>There are following assignment operators supported by C language: </p></div>
+<div><table >
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <tr><td>=</td> <td>Simple assignment operator, Assigns values from right side operands to left side operand </td> <td>C = A + B will assign value of A + B into C </td></tr>
 <tr><td>+=</td> <td>Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand </td> <td>C += A is equivalent to C = C + A </td></tr>
@@ -263,19 +212,20 @@ main()
  
 }
 </pre></div>
-<div class="cont"><p>When you compile and execute the above program, it produces the following result:</p></div>
-<div class="orl"><p>Line 1 - =  Operator Example, Value of c = 21<br> Line 2 - += Operator Example, Value of c = 42<br> Line 3 - -= Operator Example, Value of c = 21<br> Line 4 - *= Operator Example, Value of c = 441<br> Line 5 - /= Operator Example, Value of c = 21<br> Line 6 - %= Operator Example, Value of c = 11<br> Line 7 - <<= Operator Example, Value of c = 44<br> Line 8 - >>= Operator Example, Value of c = 11<br>Line 9 - &= Operator Example, Value of c = 2<br> Line 10 - ^= Operator Example, Value of c = 0<br> Line 11 - |= Operator Example, Value of c = 2 </p></div>
-<h2 class="cont">Misc Operators >> sizeof & ternary </h2>
-<div><p>There are few other important operators including sizeof and ? : supported by C Language. </p></div>
-<div class="tbl"><table>
+<p>When you compile and execute the above program, it produces the following result:</p>
+<div ><p>Line 1 - =  Operator Example, Value of c = 21<br> Line 2 - += Operator Example, Value of c = 42<br> Line 3 - -= Operator Example, Value of c = 21<br> Line 4 - *= Operator Example, Value of c = 441<br> Line 5 - /= Operator Example, Value of c = 21<br> Line 6 - %= Operator Example, Value of c = 11<br> Line 7 - <<= Operator Example, Value of c = 44<br> Line 8 - >>= Operator Example, Value of c = 11<br>Line 9 - &= Operator Example, Value of c = 2<br> Line 10 - ^= Operator Example, Value of c = 0<br> Line 11 - |= Operator Example, Value of c = 2 </p></div>
+<h2 id="miscoperator">Misc Operators >> sizeof & ternary </h2>
+<div class="cont">
+<p>There are few other important operators including sizeof and ? : supported by C Language. </p></div>
+<div><table border="2">
 <tr><td><strong>Operator</strong></td> <td><strong>Description</strong></td> <td><strong>Example</strong></td></tr>
 <tr><td>sizeof()</td> <td>Returns the size of an variable. </td> <td>sizeof(a), where a is integer, will return 4. </td></tr>
 <tr><td>&</td> <td>Returns the address of an variable. </td> <td>&a; will give actual address of the variable.</td></tr>
 <tr><td>*</td> <td>Pointer to a variable</td> <td>*a; will pointer to a variable. </td></tr>
 <tr><td>?:</td> <td>Conditional Expression</td> <td>If Condition is true ? Then value X : Otherwise value Y </td></tr></table></div>
-<h2 class="cont">Operators Precedence in C</h2>
-<div class="cont"><p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.<br> For example, x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.<br> Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p></div>
-<div class="tbl"><table>
+<h2 id="opprecedence">Operators Precedence in C</h2>
+<p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.<br> For example, x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.<br> Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
+<div ><table>
 <tr><td><strong>category</strong></td> <td><strong>Operator</strong></td> <td><strong>associativity</strong></td></tr>
 <tr><td>postfix</td> <td>() [] -> ++ --</td> <td>Left to right</td></tr>
 <tr><td>unary</td> <td>+ - ! ~ ++ -- (type)*& sizeof</td> <td>right to left</td></tr>
@@ -315,7 +265,8 @@ main()
    return 0; 
 }
 </pre></div>
-<div class="cont"><p>When you compile and execute the above program, it produces the following result: </p></div>
-<div class="unl"><p>Value of (a + b) * c / d is : 90<br> Value of ((a + b) * c) / d is  : 90<br> Value of (a + b) * (c / d) is  : 90<br> Value of a + (b * c) / d is  : 50 </p></div>
+<p>When you compile and execute the above program, it produces the following result: </p>
+<div><p>Value of (a + b) * c / d is : 90<br> Value of ((a + b) * c) / d is  : 90<br> Value of (a + b) * (c / d) is  : 90<br> Value of a + (b * c) / d is  : 50 </p></div>
+
 </body>
 </html>
