@@ -1,9 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Variable Scope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../../../css/Main.css" />
+  <link rel="stylesheet" href="../../../../css/Layout.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="icon" href="../../../log2.png" type="image/x-icon" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!--Fonts-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script
+    src =
+      "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js";>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+    integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <title>TechnoJitsu</title>
 </head>
+
 <body>
-    <h2 id="variablescope"> Varible Scope Rules</h2>
+  <!-- horizontal navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid" id="navtop">
+      <div class="navbar-header">
+        <a id="txtdeco" href="#">
+          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../Log.png" width="50" height="50"
+            class="d-inline-block align-top" />
+        </a>
+        <span><a id="head" href="# ">TechnoJitsu</a></span>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="vline"><a href="#">PROJECTS</a></li>
+        <li><a href="#">ARTICLES</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            LANG-GUIDES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">Java</a></li>
+          </ul>
+        </li>
+
+        <li class="vline">
+          <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li>
+          <a href="Form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<body>
+    <h2 class="hd2" id="variablescope"> Varible Scope Rules</h2>
     <div class="cont">
         <p>Ascope in any programming is a region of the program where a defined variable can have
             its existence and beyond that variable cannot be accessed. There are three places where
@@ -107,5 +168,55 @@
         value of b in sum() = 20
         value of c in main() = 30
         </div>
-</body>
-</html>
+        <footer class="footer-content">
+            <div class="jumbotron text-md-left">
+              <div class="row">
+                <div class="col-md-5 " >
+                  <img src="../../../Log.png" alt="footer-img" id="footer-img">
+                  
+                  <h3 class="footer-text text-left ">TechNoJitsu:</h3>
+                  <p id="footercontent">
+                   Derek Content HERE.................................................
+                  </p>
+                </div>
+              
+                <div class="col-md-2" id="footert">
+                  <h4 class="text-uppercase  ">Projects</h4>
+                  <ul class="list-unstyled text-center">
+                    <li><a href="#">########</a></li>
+                    <li><a href="#">########</a></li>
+                    <li><a href="#">########</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h4 class="text-uppercase ">Articles</h4>
+                  <ul class="list-unstyled text-center">
+                    <li><a href="#">########</a></li>
+                    <li><a href="#">########</a></li>
+                    <li><a href="#">########</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h4 class="text-uppercase ">Language Guides</h4>
+                  <ul class="list-unstyled text-center">
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+         
+        
+        
+            <div class="footer-copyright text-center">
+              © 2020 Copyright:
+              <a href="TechNoJitsu.html"> TechNoJitsu.com</a>
+            </div>
+         
+          </footer>
+          <!--Footer-->
+        </body>
+        
+        </html>
+        
