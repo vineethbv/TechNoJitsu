@@ -3,7 +3,8 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="Main.css" />
+  <link rel="stylesheet" href="../../../../css/Main.css" />
+  <link rel="stylesheet" href="../../../../css/Layout.css" />
   <link rel="stylesheet" href="animations.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link rel="icon" href="log2.png" type="image/x-icon" />
@@ -62,11 +63,11 @@
       </ul>
     </div>
   </nav>
-    <h1 id="loop">C Loops </h1>
+    <h1 class="hd1" id="loop">C Loops </h1 >
     <div class="cont">	
     <p>There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.<br>
     A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages </p></div>
-    <h2 id="whileloop">while loop in C</h2>
+    <h2 class="hd2" id="whileloop">while loop in C</h2>
     <div class="cont"><p>A while loop statement in C programming language repeatedly executes a target statement as long as a given condition is true.<br><strong>Syntax</strong><br><pre>	
     while(condition) 
     { 
@@ -90,7 +91,7 @@
     return 0; 
     }
     </pre></div>
-    <h2 id="forloop">for loop in C </h2>
+    <h2 class="hd2" id="forloop">for loop in C </h2>
     <div clas="cont"><p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. <br>
     <strong>Syntax</strong><br>
     <pre>
@@ -118,7 +119,7 @@
     return 0; 
     } 
     </pre></div>
-    <h2 id="dowhileloop">do-while loop in C </h2>
+    <h2 class="hd2" id="dowhileloop">do-while loop in C </h2>
     <div class="cont"><p>A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.<br><strong>Syntax</strong>
     <pre>
     do 
@@ -146,7 +147,7 @@
     return 0;
     }
     </pre></div>
-    <h2 id="nestedloop">nested loops in C </h2>
+    <h2 class="hd2" id="nestedloop">nested loops in C </h2>
     <div class="cont"><p>C programming language allows to use one loop inside another loop. Following section shows few examples to illustrate the concept. <br><br>
     The syntax for a nested <strong>for()</strong> loop statement in C is as follows: <br>
     <pre>for ( init; condition; increment ) 
@@ -193,7 +194,7 @@
         return 0; 
     }
     </pre></div> 
-    <h2 id="break">break statement in C </h2>
+    <h2 class="hd2" id="break">break statement in C </h2>
     <div class="cont"><p>The break statement in C programming language has the following three usages: </p></div>
     <div class="orl">
     <ol>
@@ -229,7 +230,7 @@
     }
     </pre></div>
     
-    <h2 id="continue">continue statement in C </h2>
+    <h2 class="hd2" id="continue">continue statement in C </h2>
     <div class="cont">
     <p>The continue statement in C programming language works somewhat like the break statement. Instead of forcing termination, 
         however, continue forces the next iteration of the loop to take place, skipping any code in between.</p>
@@ -259,7 +260,7 @@
     } 
     </pre></div>
     
-    <h2 id="goto">goto statement in C </h2>
+    <h2 class="hd2" id="goto">goto statement in C </h2>
     <div class="cont"><p>A goto statement in C programming language provides an unconditional jump from the goto to a labeled statement in the same function. <br>
     <strong>NOTE:</strong> Use of <strong>goto</strong> statement is highly discouraged in any programming language because
     it makes difficult to trace the control flow of a program, making the program hard to understand and hard to modify. Any program that uses a goto can be rewritten so that it
@@ -288,7 +289,7 @@
         return 0; 
     }
     </pre></div>
-    <h2 id="infiniteloop">The Infinite Loop </h2>
+    <h2 class="hd2" id="infiniteloop">The Infinite Loop </h2>
     <div class="cont"><p>A loop becomes infinite loop if a condition never becomes false<br><strong>syntax</strong>
     <pre>
     #include <stdio.h>   

@@ -1,7 +1,69 @@
-<html>
-<head><title>Files</title></head>
-<body>	
-<h1 id="file">File</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../../../css/Main.css" />
+  <link rel="stylesheet" href="../../../../css/Layout.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="icon" href="../../../log2.png" type="image/x-icon" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!--Fonts-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script
+    src =
+      "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js";>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+    integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <title>TechnoJitsu</title>
+</head>
+
+<body>
+  <!-- horizontal navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid" id="navtop">
+      <div class="navbar-header">
+        <a id="txtdeco" href="#">
+          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../Log.png" width="50" height="50"
+            class="d-inline-block align-top" />
+        </a>
+        <span><a id="head" href="# ">TechnoJitsu</a></span>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="vline"><a href="#">PROJECTS</a></li>
+        <li><a href="#">ARTICLES</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            LANG-GUIDES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">Java</a></li>
+          </ul>
+        </li>
+
+        <li class="vline">
+          <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li>
+          <a href="Form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<h1 class="hd1" id="file">File</h1 class="hd1">
 <div class="cont"><p>Last session we explained about standard input and output devices handled by C programming language. 
 This chapter we will see how C programmers can create, open, close text or binary files for their data storage.file represents a 
 sequence of bytes, does not matter if it is a text file or binary file. C programming language provides access on high level functions
@@ -24,7 +86,7 @@ will start from the beginning but writing can only be appended.
 </td></tr></table></div>
 <h3 class="ficlose">Closing a file</h3>
 <div class="cont"><p>To close a file, use the fclose( ) function. The prototype of this function is:<br><pre>int fclose( FILE *fp );</pre><br>The fclose( ) function returns zero on success, or EOF if there is an error in closing the file. This function actually, flushes any data still pending in the buffer to the file, closes the file, and releases any memory used for the file. The EOF is a constant defined in the header file stdio.h.</p></div>
-<h2 class="fiwrite">Writing a File</h2>
+<h2 class="hd2" class="fiwrite">Writing a File</h2>
 <div class="cont"><p>Following is the simplest function to write individual characters to a stream:<br><pre>int fputc( int c, FILE *fp );</pre><br>The function fputc() writes the character value of the argument c to the output stream referenced by fp. It returns the written character written on success otherwise EOF if there is an error. You can use the following functions to write a null-terminated string to a stream:<br><pre>int fputs( const char *s, FILE *fp ); </pre>The function fputs() writes the string s to the output stream referenced by fp. It returns a non-negative value on success, otherwise EOF is returned in case of any error.</p></div>
 <b>Example:</b>
 <div class="code"><pre>
@@ -69,7 +131,7 @@ main()
 size_t fread(void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);
 size_t fwrite(const void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);</pre><br>Both of these functions should be used to read or write blocks of memories - usually arrays or structures.</p></div>
 
-<h2 id="I&OC">Input & Output</h2>
+<h2 class="hd2" id="I&OC">Input & Output</h2>
 <div class="cont"><p>When we are saying Input that means to feed some data into program. This can be given in the form of file or from command line. C programming language provides a set of uilt-in functions to read given input and feed it to the program as per requirement.then we are saying Output that means to display some data on screen, printer or in any file. C programming language povides a set of built-in functions to output the data on the computer screen as well as you can save that data in text or binary files.</p></div>
 <h3 class="stdf">The Standard Files</h3>
 <div class="cont"><p>C programming language treats all the devices as files. So devices such as the display are addressed in the same way as files and following three file are automatically opened when a program executes to provide access to the keyboard and screen.</p>
@@ -134,5 +196,55 @@ int main( )
 }
 	
 </pre></div>	
+<footer class="footer-content">
+    <div class="jumbotron text-md-left">
+      <div class="row">
+        <div class="col-md-5 " >
+          <img src="../../../Log.png" alt="footer-img" id="footer-img">
+          
+          <h3 class="footer-text text-left ">TechNoJitsu:</h3>
+          <p id="footercontent">
+           Derek Content HERE.................................................
+          </p>
+        </div>
+      
+        <div class="col-md-2" id="footert">
+          <h4 class="text-uppercase  ">Projects</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Articles</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Language Guides</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Java</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+
+
+    <div class="footer-copyright text-center">
+      © 2020 Copyright:
+      <a href="TechNoJitsu.html"> TechNoJitsu.com</a>
+    </div>
+ 
+  </footer>
+  <!--Footer-->
 </body>
+
 </html>
+
