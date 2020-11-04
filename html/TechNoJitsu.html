@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/css/Main.css" />
   <link rel="stylesheet" href="/css/Layout.css" />
-  <link rel="stylesheet" href="animations.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link rel="icon" href="/img/icon/log2.png" type="image/x-icon" />
   <!--Fonts-->
@@ -26,6 +26,7 @@
     integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>TechnoJitsu</title>
 </head>
 
@@ -66,10 +67,10 @@
   <!-- horizontal navbar -->
 
   <!--Upper contents Begin-->
-  <div class="modal-content" id="content">
+  <div class="modal-content" id="content" >
     <div class="row row-no-gutter">
       <div class="col-sm-5 image" id="con_img">
-        <img class="ming" alt="content_logo" id="img " src="/img/icon/Logo.png" width="300" height="300" />
+        <img class="ming"  alt="content_logo" id="img " src="/img/icon/Logo.png" width="300" height="300" />
       </div>
       <div class="col-sm-7 htext">
         <div class="row row1"></div>
@@ -95,7 +96,7 @@
   <!--Upper contents END-->
 
   <!--Lower Contents Begins-->
-  <div class="modal-center" id="content1">
+  <div class="modal-center" id="content1" data-aos="fade-right">
     <div class="row row-no-gutter">
       <div class="col-sm-3">
         <img id="imgs" alt="projects" src="/img/icon/PROJ2.png" width="300" height="300" />
@@ -116,7 +117,7 @@
     </div>
   </div>
 
-  <div class="modal-center" id="content2">
+  <div class="modal-center" id="content2" data-aos="fade-left" >
     <div class="row row-no-gutter" >
       <div class="col-sm-3"></div>
       <div class="col-sm-7 htext" id="content2col">
@@ -136,7 +137,7 @@
     </div>
   </div>
 
-  <div class="modal-center" id="content3">
+  <div class="modal-center" id="content3" data-aos="fade-right">
     <div class="row row-no-gutter">
       <div class="col-sm-3">
         <img id="imgs" alt="Lang-guide" src="/img/icon/PROJ2.png" width="300" height="300" />
@@ -209,6 +210,7 @@
  
   </footer>
   <!--Footer-->
+  <script>AOS.init();</script>
 </body>
 
 </html>
