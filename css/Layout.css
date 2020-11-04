@@ -132,11 +132,7 @@ position: initial!important;
     font-weight: 300;
     font-size: 15px;
     padding: 4px;
-   }
-
-   .text-uppercase{
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
+    padding-right: 20px;
    }
    #footer-img{
      float: left;
@@ -150,6 +146,7 @@ position: initial!important;
 
     .footer-content>.jumbotron{
       background:-webkit-gradient(linear, left top, right top, from(rgb(134 226 111)), to(rgb(221 206 106)));
+     padding-right: 20px!important;
     }
   
     .footer-content{
