@@ -1,0 +1,338 @@
+<html>
+    <head>
+        <title> DATA TYPES </title>
+    </head>
+    <body>
+        <h2 id="DATATYPES"> DATA TYPES </h2>
+        <div class="cont">
+            <p>While writing program in any language, you need to use various variables to store various
+                information. Variables are nothing but reserved memory locations to store values. This means
+                that when you create a variable you reserve some space in memory.<br>
+                You may like to store information of various data types like character, wide character, integer,
+                floating point, double floating point, boolean etc. Based on the data type of a variable, the
+                operating system allocates memory and decides what can be stored in the reserved memory.
+                </p>
+        </div>
+        <h3 id="primitive">Primitive Built-in Types</h3>
+        <div class="cont">
+            <P>C++ offers the programmer a rich assortment of built-in as well as user defined data types.
+                Following table lists down seven basic C++ data types:</P>
+        </div>
+        <div class="tbl">
+            <table>
+                <tr>
+                    <td><b>Type</b></td> <td><b>Keywoed</b></td>
+                </tr>
+                <tr>
+                    <td>Boolean</td> <td>bool</td>
+                </tr>
+                <tr>
+                    <td>Character</td> <td>char</td>
+                </tr>
+                <tr>
+                    <td>Integer</td> <td>int</td>
+                </tr>
+                <tr>
+                    <td>Floating point</td> <td>float</td>
+                </tr>
+                <tr>
+                    <td>Double floating point</td> <td>double</td>
+                </tr>
+                <tr>
+                    <td>Valueless</td> <td>void</td>
+                </tr>
+                <tr>
+                    <td>Wide character</td> <td>wchar_t</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cont">
+            <p>Several of the basic types can be modified using one or more of these type modifiers:</p>
+        </div>
+        <div class="unl">
+            <ul>
+                <li>signed</li>
+                <li>unsigned</li>
+                <li>short</li>
+                <li>long</li>
+            </ul>
+        </div>
+        <div class="cont">
+            <p>The following table shows the variable type, how much memory it takes to store the value in
+                memory, and what is maximum and minimum value which can be stored in such type of
+                variables.</p>
+        </div>
+        <div class="tbl">
+            <table>
+                <tr>
+                    <td><b>Type</b></td> <td><b>Typical Bit Width</b></td> <td><b>Typical Range</b></td>
+                </tr>
+                <tr>
+                    <td>char</td> <td>1 bytes</td> <td>-127 to 127</td>
+                </tr>
+                <tr>
+                    <td>unsigned char</td> <td>1 bytes</td> <td>0 to 255</td>
+                </tr>
+                <tr>
+                    <td>signed char</td> <td>1 bytes</td> <td>-127 to 127</td>
+                </tr>
+                <tr>
+                    <td>int</td> <td>4 bytes</td> <td>-2147483648 to 2147483647</td>
+                </tr>
+                <tr>
+                    <td>unsigned int</td> <td>4 bytes</td> <td>0 to 4294967295</td>
+                </tr>
+                <tr>
+                    <td>signed int</td> <td>4 bytes</td> <td>-2147483648 to 2147483647</td>
+                </tr>
+                <tr>
+                    <td>short int</td> <td>2 bytes</td> <td>-32768 to 32767</td>
+                </tr>
+                <tr>
+                    <td>unsigned short int</td> <td>range</td> <td>0 to 65,535</td>
+                </tr>
+                <tr>
+                    <td>short int</td> <td>range</td> <td>-32768 to 32767</td>
+                </tr>
+                <tr>
+                    <td>long int</td> <td>4 bytes</td> <td>-2,147,483,647 to 2,147,483,647</td>
+                </tr>
+                <tr>
+                    <td>unsigned long int</td> <td>4 bytes</td> <td>0 to 4,294,967,295</td>
+                </tr>
+                <tr>
+                    <td>signed long int</td> <td>4 bytes</td> <td>-2,147,483,647 to 2,147,483,647</td>
+                </tr>
+                <tr>
+                    <td>float</td> <td>4 bytes</td> <td>+/- 3.4e +/- 38 (~7 digits)</td>
+                </tr>
+                <tr>
+                    <td>double</td> <td>8 bytes</td> <td>+/- 1.7e +/- 308 (~15 digits)</td>
+                </tr>
+                <tr>
+                    <td>long double</td> <td>8 bytes</td> <td>+/- 1.7e +/- 308 (~15 digits)</td>
+                </tr>
+                <tr>
+                    <td>wchar_t</td> <td>2 or 4 bytes</td> <td>1 wide character</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cont">
+            <p>The size of variables might be different from those shown in the above table, depending on
+                the compiler and the computer you are using.<br>
+                Following is the example, which will produce correct size of various data types on your
+                computer.</p>
+        </div>
+        <div class="code">
+            <pre>
+#include < iostream.h >
+using namespace std;
+int main()
+{
+    cout << "Size of char : " << sizeof(char) << endl;
+    cout << "Size of int : " << sizeof(int) << endl;
+    cout << "Size of short int : " << sizeof(short int) << endl;
+    cout << "Size of long int : " << sizeof(long int) << endl;
+    cout << "Size of float : " << sizeof(float) << endl;
+    cout << "Size of double : " << sizeof(double) << endl;
+    cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+    return 0
+}
+            </pre>
+        </div>
+        <div class="cont">
+            <p>This example uses <b>endl</b>, which inserts a new-line character after every line and << operator
+                is being used to pass multiple values out to the screen. We are also using <b>sizeof()</b> function
+                to get size of various data types.
+                </p>
+        </div>
+        <h3 id="declaration">typedef Declarations</h3>
+        <div class="cont">
+            <p>You can create a new name for an existing type using <b>typedef</b>. Following is the simple syntax
+                to define a new type using typedef:
+            <pre>typedef type newname;</pre>For example, the following tells the compiler that feet is another name for int:
+            <pre>typedef int feet;</pre>Now, the following declaration is perfectly legal and creates an integer variable called
+            distance:
+        <pre>feet distance;</pre></p>
+        </div>
+        <h3 id="enumerated">Enumerated Types</h3>
+        <div class="cont">
+            <p>An enumerated type declares an optional type name and a set of zero or more identifiers that
+                can be used as values of the type. Each enumerator is a constant whose type is the
+                enumeration.
+                Creating an enumeration requires the use of the keyword <b>enum</b>. The general form of an
+                enumeration type is:
+            <pre>enum enum-name { list of names } var-list;</pre>Here, the enum-name is the enumeration's type name. The list of names is comma separated.<br>
+            For example, the following code defines an enumeration of colors called colors and the variable
+            c of type color. Finally, c is assigned the value "blue".
+            <pre>enum color { red, green, blue } c;
+            c = blue;</pre>By default, the value of the first name is 0, the second name has the value 1, and the third
+            has the value 2, and so on. But you can give a name, a specific value by adding an initializer.
+            For example, in the following enumeration, green will have the value 5.
+            <pre>enum color { red, green=5, blue };</pre>Here, blue will have a value of 6 because each name will be one greater than the one that
+            precedes it.</p>
+        </div>
+        <h3 id="definition">Variable Definition in C++</h3>
+        <div class="cont">
+            <p>A variable definition tells the compiler where and how much storage to create for the variable.
+                A variable definition specifies a data type, and contains a list of one or more variables of that
+                type as follows:
+            <pre>type variable_list;</pre>Here, type must be a valid C++ data type including char, w_char, int, float, double, bool or
+            any user-defined object, etc., and variable_list may consist of one or more identifier names
+            separated by commas. Some valid declarations are shown here:
+            <pre>
+int i, j, k;
+char c, ch;
+float f, salary;
+double d;
+            </pre>The line int i, j, k; both declares and defines the variables i, j and k; which instructs the
+            compiler to create variables named i, j and k of type int.<br>
+            Variables can be initialized (assigned an initial value) in their declaration. The initializer
+            consists of an equal sign followed by a constant expression as follows:
+            <pre>type variable_name = value;</pre>Some examples are:
+            <pre>extern int d = 3, f = 5;    <i> // declaration of d and f.</i>
+int d = 3, f = 5;           <i> // definition and initializing d and f.</i>
+byte z = 22;                <i> // definition and initializes z.</i>
+char x = 'x';               <i> // the variable x has the value 'x'.</i>
+                </pre></p>
+        </div>
+        <h3 id="declaration">Variable Declaration in C++</h3>
+        <div class="cont">
+            <p>A variable declaration provides assurance to the compiler that there is one variable existing
+                with the given type and name so that compiler proceed for further compilation without
+                needing complete detail about the variable. A variable declaration has its meaning at the time
+                of compilation only, compiler needs actual variable declaration at the time of linking of the
+                program.<br>A variable declaration is useful when you are using multiple files and you define your variable
+                in one of the files which will be available at the time of linking of the program. You will
+                use extern keyword to declare a variable at any place. Though you can declare a variable
+                multiple times in your C++ program, but it can be defined only once in a file, a function or a
+                block of code.</p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+<i>// Variable declaration:</i>
+extern int a, b;
+extern int c;
+extern float f;
+                
+int main ()
+{
+    <i>// Variable definition:</i>
+    int a, b;
+    int c;
+    float f;
+    <i>// actual initialization</i>
+    a = 10;
+    b = 20;
+    c = a + b;
+    cout << c << endl ;
+    f = 70.0/3.0;
+    cout << f << endl ;
+    return 0
+}
+</pre>
+        </div>
+        <div class="cont">
+            <p>Same concept applies on function declaration where you provide a function name at the time
+                of its declaration and its actual definition can be given anywhere else. For example:
+                </p>
+        </div>
+        <div class="code">
+            <pre>
+<i>// function declaration</i>
+int func();
+int main()
+{
+    <i>// function call</i>
+    int i = func();
+}
+<i>// function definition</i>
+int func()
+{
+    return 0;
+}                
+            </pre>
+        </div>
+        <h3 id="rlvalues">Lvalues and Rvalues</h3>
+        <div class="cont">
+            <p>There are two kinds of expressions in C++:</p>
+        </div>
+        <div class="unl">
+            <ul>
+                <li><b>lvalue</b> : Expressions that refer to a memory location is called "lvalue" expression. An
+                    lvalue may appear as either the left-hand or right-hand side of an assignment.</li>
+                <li><b>rvalue</b> : The term rvalue refers to a data value that is stored at some address in
+                    memory. An rvalue is an expression that cannot have a value assigned to it which
+                    means an rvalue may appear on the right- but not left-hand side of an assignment.Variables are lvalues and so may appear on the left-hand side of an assignment. </li>
+                </ul>
+        </div>
+        <h3 id="local">Local Variables</h3>
+        <div class="cont">
+            <p>Variables that are declared inside a function or block are local variables. They can be used
+                only by statements that are inside that function or block of code. Local variables are not
+                known to functions outside their own. Following is the example using local variables:
+                </p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+int main ()
+{
+    <i>// Local variable declaration:</i>
+    int a, b;
+    int c;
+    <i>// actual initialization</i>
+    a = 10;
+    b = 20;
+    c = a + b;
+    cout << c;
+    return 0;
+}
+            </pre>
+        </div>
+        <h3 id="global">GlobalVariables</h3>
+        <div class="cont">
+            <p>Global variables are defined outside of all the functions, usually on top of the program. The
+                global variables will hold their value throughout the life-time of your program.<br>
+                A global variable can be accessed by any function. That is, a global variable is available for
+                use throughout your entire program after its declaration. Following is the example using global
+                and local variables:</p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+<i>// Global variable declaration:</i>
+int g;
+int main ()
+{
+    <i>// Local variable declaration:</i>
+    int a, b;
+    <i>// actual initialization</i>
+    a = 10;
+    b = 20;
+    g = a + b;
+    cout << g;
+    return 0;
+}                         
+            </pre>
+        </div>
+        <div class="cont">
+            <pre>#include <iostream>
+using namespace std;
+<i>// Global variable declaration:</i>
+int g = 20;
+int main ()
+{
+    <i>// Local variable declaration:</i>
+    int g = 10;
+    cout << g;
+    return 0;
+}
+            </pre>
+        </div>
+        <div class="cont">
+            <p>When the above code is compiled and executed, it produces the following result:<pre>10</pre></p>
+        </div>
+    </body>
+</html>
