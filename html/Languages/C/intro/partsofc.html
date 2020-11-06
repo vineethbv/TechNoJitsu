@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../../../../css/Main.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="../../../../css/Layout.css" />
   <link rel="stylesheet" href="animations.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
@@ -63,20 +64,39 @@
       </ul>
     </div>
   </nav>
-    <h1 class="hd1" > Parts of Syntax in C</h1 >
-<h3>Tokens in C</h3>
+  <ul class="nav navbar-left flex-column">
+    <ul class="nav navbar-left flex-column">
+      <li><a href="historyofc.html">C History</a></li>
+      <li class="vline"><a href="partsofc.html">Parts of C</a></li>
+      <li><a href="datatypes.html">Data Types</a></li>
+      <li ><a href="variableandconstants.html">Variable & Constants</a></li>
+      <li><a href="operator.html">Operator</a></li>
+      <li ><a href="decisionmaking.html">Decision Making</a></li>
+      <li><a href="loop.html">Looping</a></li>
+      <li ><a href="functions.html">Functions</a></li>
+      <li><a href="scope.html">Variable Scope</a></li>
+      <li><a href="array.html">Arrays</a></li>
+      <li><a href="pointer.html">Pointers</a></li>
+      <li ><a href="union.html">Structures</a></li>
+      <li><a href="file.html">Files</a></li>
+      <li ><a href="preprocessors.html">Preprocessor</a></li>
+    </ul>
+  <div class="container outerSign container ">
+    <fieldset class="modal-content innerSign container" ><legend class="signUpHeader "> <h1 class="hd1" >Parts of Syntax in C</h1 ></legend>
+  
+<h3 class="hd3">Tokens in C</h3>
 <div class="cont">
 <p>A C program consists of various tokens and <em>a token is either a keyword, an identifier, a
 constant, a string literal, or a symbol.</em></p> </div>
-<h3>Semicolon <q>;</q></h3>
+<h3 class="hd3">Semicolon <q>;</q></h3>
 <div class="cont">
 <p>In C program, the semicolon is a <em>statement terminator</em>. That is, each individual statement
 must be ended with a semicolon. It <em>indicates the end of one logical entity</em>.</p> </div>
-<h3>Comments</h3>
+<h3 class="hd3">Comments</h3>
 <div class="cont">
 <p>Comments are like helping text in your C program and they are <em>ignored by the compiler</em>.
 They start with /* and terminates with the characters */</p> </div>
-<h3>Identifiers</h3>
+<h3 class="hd3">Identifiers</h3>
 <div class="cont">
 <p>
 A C identifier is <em>a name used to identify a variable, function, or any other user-defined
@@ -89,31 +109,34 @@ identifiers in C. Here are some examples of acceptable identifiers:<br>
 mohd, zara, abc, move_name, a_123
 </p> 
 </div>
-<h3>Keywords</h3>
+<h3 class="hd3">Keywords</h3>
 <div class="cont">
 <p>The following list shows the <em>reserved</em> words in C. These reserved words may not be used as
-constant or variable or any other identifier names.</p> </div>
-<div class="tbl">
-<table>
+constant or variable or any other identifier names.</p> 
+
+<table class="tbl table-bordered">
 <tr>
- <th>auto</th> <th>else</th> <th>Long</th> <th> switch</th> <th>break</th> <th>enum</th> 
+ <td >auto</td> <td >else</td> <td >Long</td> <td > switch</td> <td >break</td> <td >enum</td> 
 </tr>
 <tr> 
- <th>register</th> <th>typedef</th> <th>case</th> <th>extern</th> <th>return</th> <th>union</th> 
+ <td >register</td> <td >typedef</td> <td >case</td> <td >extern</td> <td >return</td> <td >union</td> 
 </tr>
 <tr>
- <th>char</th> <th>float</th> <th>short</th> <th>unsigned</th> <th>const</th> <th>for</th>
+ <td >char</td> <td >float</td> <td >short</td> <td >unsigned</td> <td >const</td> <td >for</td>
 </tr>
 <tr>
- <th>signed</th> <th>void</th> <th>continue</th> <th>goto</th> <th>sizeof</th> <th>volatile</th>
+ <td >signed</td> <td >void</td> <td >continue</td> <td >goto</td> <td >sizeof</td> <td >volatile</td>
 </tr>
 <tr>
-<th>default</th> <th>if</th> <th>static</th> <th>while</th> <th>do</th> <th>int</th>
+<td >default</td> <td >if</td> <td >static</td> <td >while</td> <td >do</td> <td >int</td>
 </tr>
-<tr> <th>struct</th> <th>packed</th><th>double</th>
+<tr> <td >struct</td> <td >packed</td><td >double</td>
 </tr> 
 </table>
 </div>
+
+    </fieldset>
+  </div>
 <footer class="footer-content">
     <div class="jumbotron text-md-left">
       <div class="row">
