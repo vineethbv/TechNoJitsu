@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../../../../css/Main.css" />
   <link rel="stylesheet" href="../../../../css/Layout.css" />
+  <link rel="stylesheet" href="../../../../css/styles.css" />
   <link rel="stylesheet" href="animations.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link rel="icon" href="../../../log2.png" type="image/x-icon" />
@@ -63,7 +64,26 @@
       </ul>
     </div>
   </nav>
-<h1 class="hd1" id="file">File</h1 class="hd1">
+  <ul class="nav navbar-left flex-column">
+    <li><a href="historyofc.html">C History</a></li>
+    <li ><a href="partsofc.html">Parts of C</a></li>
+    <li><a href="datatypes.html">Data Types</a></li>
+    <li><a href="variableandconstants.html">Variable & Constants</a></li>
+    <li ><a href="operator.html">Operator</a></li>
+    <li ><a href="decisionmaking.html">Decision Making</a></li>
+    <li><a href="loop.html">Looping</a></li>
+    <li><a href="functions.html">Functions</a></li>
+    <li><a href="scope.html">Variable Scope</a></li>
+    <li><a href="array.html">Arrays</a></li>
+    <li><a href="pointer.html">Pointers</a></li>
+    <li><a href="union.html">Structures</a></li>
+    <li class="vline"><a href="file.html">Files</a></li>
+    <li ><a href="preprocessors.html">Preprocessor</a></li>
+  </ul>
+  <div class="container outerSign container">
+    <fieldset class="modal-content innerSign" ><legend class="signUpHeader "> <h2 class="hd2" id="decision">DECISION MAKING IN C</h1 ></legend>
+    
+<h1 class="hd1" id="file">File</h1>
 <div class="cont"><p>Last session we explained about standard input and output devices handled by C programming language. 
 This chapter we will see how C programmers can create, open, close text or binary files for their data storage.file represents a 
 sequence of bytes, does not matter if it is a text file or binary file. C programming language provides access on high level functions
@@ -158,7 +178,7 @@ int main( )
     return 0;
 }	
 </pre></div>
-<h3 id="gets&puts">The gets() & puts() functions</h2>
+<h3 id="gets&puts">The gets() & puts() functions</h3>
 <div class="cont"><p>The char *gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF.
 The int puts(const char *s) function writes the string s and a trailing newline to stdout.
 </p>
@@ -196,6 +216,8 @@ int main( )
 }
 	
 </pre></div>	
+</fieldset>
+</div>
 <footer class="footer-content">
     <div class="jumbotron text-md-left">
       <div class="row">
