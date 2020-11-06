@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title>constant</title>
+    </head>
+    <body>
+        <div class="cont">
+            <p>Constants refer to fixed values that the program may not alter and they are called literals.<br>
+                Constants can be of any of the basic data types and can be divided into Integer Numerals,
+                Floating-Point Numerals, Characters, Strings and Boolean Values.
+            </p>
+        </div>
+        <h3 id="integer">Integer Literals</h3>
+        <div class="cont">
+            <p>An integer literal can be a decimal, octal, or hexadecimal constant. A prefix specifies the base
+                or radix: 0x or 0X for hexadecimal, 0 for octal, and nothing for decimal.<br>
+                An integer literal can also have a suffix that is a combination of U and L, for unsigned and
+                long, respectively. The suffix can be uppercase or lowercase and can be in any order.<br>
+                Here are some examples of integer literals:</p>
+        </div>
+        <div class="orl">
+            <ol>
+                <li>212 // Legal</li>
+                <li>215u // Legal</li>
+                <li>0xFeeL // Legal</li>
+                <li>078 // Illegal: 8 is not an octal digit</li>
+                <li>032UU // Illegal: cannot repeat a suffix</li>
+            </ol>
+        </div>
+        <div class="cont">
+            <p>Following are other examples of various types of Integer literals:</p>
+        </div>
+        <div class="orl">
+            <ol>
+                <li>85 // decimal</li>
+                <li>0213 // octal</li>
+                <li>0x4b // hexadecimal</li>
+                <li>30 // int</li>
+                <li>30u // unsigned int</li>
+                <li>30l // long</li>
+                <li>30ul // unsigned long</li>
+            </ol>
+        </div>
+        <h3 id="float">Floating-point Literals</h3>
+        <div class="cont">
+            <p>A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent
+                part. You can represent floating point literals either in decimal form or exponential form.<br>
+                While representing using decimal form, you must include the decimal point, the exponent, or
+                both and while representing using exponential form, you must include the integer part, the
+                fractional part, or both. The signed exponent is introduced by e or E.<br>
+                Here are some examples of floating-point literals:
+                </p>
+        </div>
+        <div class="orl">
+            <ol>
+                <li>3.14159 // Legal</li>
+                <li>314159E-5L // Legal</li>
+                <li>510E // Illegal: incomplete exponent</li>
+                <li>210f // Illegal: no decimal or exponent</li>
+                <li>.e55 // Illegal: missing integer or fraction</li>
+            </ol>
+        </div>
+        <h3 id="bool">Boolean Literals</h3>
+        <div class="cont">
+            <p>There are two Boolean literals and they are part of standard C++ keywords:</p>
+        </div>
+        <div class="unl">
+            <ul>
+                <li>A value of true representing true</li>
+                <li>A value of false representing false.</li>
+            </ul>
+        </div>
+        <h3 id="char">character Literals</h3>
+        <div class="cont">
+            <p>Character literals are enclosed in single quotes. If the literal begins with L (uppercase only),
+                it is a wide character literal (e.g., L'x') and should be stored in wchar_t type of variable.
+                Otherwise, it is a narrow character literal (e.g., 'x') and can be stored in a simple variable of
+                char type.<br>
+                A character literal can be a plain character (e.g., 'x'), an escape sequence (e.g., '\t'), or a
+                universal character (e.g., '\u02C0').<br>
+                There are certain characters in C++ when they are preceded by a backslash they will have
+                special meaning and they are used to represent like newline (\n) or tab (\t). Here, you have
+                a list of some of such escape sequence codes:
+            </p>
+        </div>
+        <div class="tbl">
+            <table>
+                <tr>
+                    <td><b>Escape sequence</b></td> <td><b>Meaning</b></td>
+                </tr>
+                <tr>
+                    <td>\\</td> <td>\character</td>
+                </tr>
+                <tr>
+                    <td>\'</td> <td>'character</td>
+                </tr>
+                <tr>
+                    <td>\"</td> <td>"character</td>
+                </tr>
+                <tr>
+                    <td>\?</td> <td>?character</td>
+                </tr>
+                <tr>
+                    <td>\a</td> <td>Alert</td>
+                </tr>
+                <tr>
+                    <td>\b</td> <td>Backspace</td>
+                </tr>
+                <tr>
+                    <td>\f</td> <td>Form feed</td>
+                </tr>
+                <tr>
+                    <td>\n</td> <td>newline</td>
+                </tr>
+                <tr>
+                    <td>\r</td> <td>Carriage return</td>
+                </tr>
+                <tr>
+                    <td>\t</td> <td>Horizontal tab</td>
+                </tr>
+                <tr>
+                    <td>\v</td> <td>Vertical tab</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cont">
+            <p>Following is the example to show a few escape sequence characters:</p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+int main()
+{
+    cout << "Hello\tWorld\n\n";
+    return 0;
+}</pre>
+        </div>
+        <div class="cont">
+            <p>When the above code is compiled and executed, it produces the following result:
+            <pre>Hello World</pre>
+            </p>
+        </div>
+        <h3 id="string">String Literals</h3>
+        <div class="cont">
+            <p>String literals are enclosed in double quotes. A string contains characters that are similar to
+                character literals: plain characters, escape sequences, and universal characters.<br>
+                You can break a long line into multiple lines using string literals and separate them using
+                whitespaces.<br>
+                Here are some examples of string literals. All the three forms are identical strings.
+            <pre>"hello, dear"
+"hello, \
+dear"
+"hello," "d" "ear"</pre></p>
+        </div>
+        <h3 id="defining">Defining Constants</h3>
+        <div class="unl">
+            <p>There are two simple ways in C++ to define constants:</p>
+            <li>Using <b>#define</b> preprocessor.</li>
+            <li>Using <b>const</b> keyword.</li>
+        </div>
+        <h3 id="#define">The #define Preprocessor</h3>
+        <div class="cont">
+            <p>Following is the form to use #define preprocessor to define a constant:<pre>#define identifier value</pre>Following example explains it in detail:</p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+#define LENGTH 10
+#define WIDTH 5
+#define NEWLINE '\n'
+int main()
+{
+    int area;
+
+    area = LENGTH * WIDTH;
+    cout << area;
+    cout << NEWLINE;
+    return 0;
+}           </pre>
+        </div>
+        <div class="cont">
+            <p>When the above code is compiled and executed, it produces the following result:<pre>50</pre></p>
+        </div>
+        <h3 id="const">The const Keyword</h3>
+        <div class="cont">
+            <p>You can use const prefix to declare constants with a specific type as follows:<pre>const type variable = value;</pre>Following example explains it in detail:</p>
+        </div>
+        <div class="code">
+            <pre>#include < iostream.h >
+using namespace std;
+int main()
+{
+    const int LENGTH = 10;
+    const int WIDTH = 5;
+    const char NEWLINE = '\n';
+    int area;
+    area = LENGTH * WIDTH;
+    cout << area;
+    cout << NEWLINE;
+    return 0;
+}
+            </pre>
+        </div>
+        <div class="cont">
+            <p>When the above code is compiled and executed, it produces the following result:<pre>50</pre>Note that it is a good programming practice to define constants in CAPITALS.</p>
+        </div>
+    </body>
+</html>
