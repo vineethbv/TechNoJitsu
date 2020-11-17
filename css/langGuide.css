@@ -1,0 +1,48 @@
+.dright {
+  top: 0% !important;
+}
+.sidenavbtn{
+  background: none;
+}
+.sidenavbtn:hover{
+  background: #09bb44;
+}
+.langGuideIntro{
+  padding: 20px;
+}
+#langGuideCont{
+  padding: 30px;
+}
+.sideNav {
+  cursor: pointer;
+  background: #0fe055;
+  box-shadow: -5px 3px 4px #848484;
+  height: 200px;
+  color: rgb(24, 23, 23);
+  font-size: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+  border-radius: 6px;
+  clip-path: circle(20px at 45px 33px);
+
+}
+  .sideNavicon {
+    border-radius: 20px;
+    padding: 0px 35px;
+    height: 26px;
+    margin-right: 80px;
+  }
+ 
+  .sideNav:hover {
+  clip-path:inset(10px 22px 7px 8px);
+  }
+  .sideNav:hover  .sideNavicon{
+  display: none;
+  }
+  .btnlink{
+    padding: 10px;
+  }
+  .sidenavbtn{
+    padding-left:  10px;
+  }
+  

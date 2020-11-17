@@ -150,6 +150,9 @@ position: initial!important;
   
     .footer-content{
       background:-webkit-gradient(linear, left top, right top, from(#27e055), to(#bff812));
+      left: 0;
+      bottom: 0;
+      
 }
 #footert{
   border-left: solid;
