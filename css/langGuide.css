@@ -1,3 +1,8 @@
+body{
+  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+
+
+}
 .dright {
   top: 0% !important;
 }
@@ -17,7 +22,7 @@
   position: fixed;
   cursor: pointer;
   background: #0fe055;
-  box-shadow: -5px 3px 4px #848484;
+  box-shadow: -5px 3px 4px #0c0c0c;
   height: 200px;
   color: rgb(24, 23, 23);
   font-size: 20px;
@@ -57,4 +62,13 @@
   .sidenavbtn{
     padding-left:  10px;
   }
-  
+.langBackground{
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+z-index: -1;;
+  }
+.langGuideMainCont{
+  color: white;
+}
