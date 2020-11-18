@@ -1,7 +1,8 @@
 body{
   background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
-
-
+}
+.navbar-default{
+  border-color: #777!important;
 }
 .dright {
   top: 0% !important;
@@ -71,4 +72,15 @@ z-index: -1;;
   }
 .langGuideMainCont{
   color: white;
+}
+.outerCont{
+  margin:40px 0px;
+  padding: 20px;
+}
+.innerCont{
+  padding: 10px;
+}
+.LangContHead{
+  font-size: 30px;
+  font-family: Alegreya Sans SC;
 }
