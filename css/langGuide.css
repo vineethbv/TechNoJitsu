@@ -34,7 +34,18 @@
   }
  
   .sideNav:hover {
-  clip-path:inset(10px 22px 7px 8px);
+  animation-name: sidebar;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  }
+  @keyframes sidebar{
+    0%{clip-path: circle(20px at 45px 33px);}
+    25%{clip-path: circle(100px at 45px 33px);}
+    50%{clip-path: circle(200px at 45px 33px);}
+    75%{clip-path: circle(300px at 45px 33px);}
+    100%{clip-path: circle(300px at 45px 33px);}
+
   }
   .sideNav:hover  .sideNavicon{
   display: none;
