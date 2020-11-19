@@ -1,0 +1,39 @@
+
+.url
+{ padding-left: px;
+  
+  margin: 10 20 40 40;
+  border: 2px solid rgb(14, 172, 235) ;
+  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.cont
+{ font-size: 18px;
+  color: black;
+  display: block ;
+  padding: 10 20 10 40;
+  
+  }
+
+.hd1
+{ font: small-caps;
+  color-interpolation-filters: linearRGB;
+  color: blue;
+  font-size: 50px;
+  padding: 10 20 10 40;
+  }
+.hd2
+{ color: rgb(13, 236, 114);
+  font-size: 20px; 
+  padding: 10 20 10 40;}
+
+ 
+strong ,e
+{ color: blue;}
+
+.cde
+{  display: block ;
+  padding: 10 20 10 40;
+  background-color: rgb(247, 240, 240);
+  margin: 10px 0px 10px 0px; }
