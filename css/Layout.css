@@ -181,5 +181,11 @@ margin-top: -16px;
   position: relative;
   padding: 10px;
 }
+.text-uppercase{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+
 
 
