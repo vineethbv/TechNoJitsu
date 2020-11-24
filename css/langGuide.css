@@ -93,5 +93,33 @@ z-index: -1;;
 h1,h2,h3{
   font-family: 'Josefin Sans', sans-serif!important;
 }
+.navbar-left{
+  background-image: url("../img/icon/Colorful\ Glowing\ Background\ Vector.jpg");
+  background-position-x: 0px;
+  border-radius: 10px;
+  animation-name: navLeft;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+@keyframes navLeft{
+  0%{background-position-x: 100%;}
+  25%{background-position-x: 75%;}
+  50%{background-position-x: 50%;}
+  75%{background-position-x: 25%;}
+  100%{background-position-x: 0%;}
+}
+ul>li>a{
+  mix-blend-mode: luminosity!important;
+  color: black!important;
+}
+ul >li>a:hover{
+  border-radius: 10px;
+}
+ul>li>.vline{
+  border-radius: 10px;
+  text-shadow: -9px 4px 11px #000000;
+}
 
 
