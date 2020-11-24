@@ -87,3 +87,11 @@ z-index: -1;;
 .mainContLang{
   margin:50px;
 }
+.cont{
+  padding: 10px;
+}
+h1,h2,h3{
+  font-family: 'Josefin Sans', sans-serif!important;
+}
+
+
