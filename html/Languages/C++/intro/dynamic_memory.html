@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Dynamic Memory </title>
+    </head>
+    <body>
+        <h2 id="Dynamic Memory">Dynamic Memory </h2>
+        <div class="cont">
+            <p>Until now, in all our programs, we have only had as much memory available as we declared for our variables,
+                having the size of all of them to be determined in the source code, before the execution of the program. But, what
+                if we need a variable amount of memory that can only be determined during runtime? For example, in the case
+                that we need some user input to determine the necessary amount of memory space. <br>The answer is dynamic memory, for which C++ integrates the operators <em>new</em> and <em>delete</em>. 
+            </p>
+        </div>
+        <h3 id="new">Operators new and new[] </h3>
+        <div class="cont">
+            <p>In order to request dynamic memory we use the operator new. new is followed by a data type specifier and -if a
+                sequence of more than one element is required- the number of these within brackets []. It returns a pointer to the
+                beginning of the new block of memory allocated. Its form is:                 
+            </p>
+        </div>
+        <div class="code">
+            <pre>pointer = new type
+pointer = new type [number_of_elements]
+            </pre>
+        </div>
+        <div class="cont">
+            <p>The first expression is used to allocate memory to contain one single element of type type. The second one is used
+                to assign a block (an array) of elements of type type, where number_of_elements is an integer value representing
+                the amount of these. For example: 
+            </p>
+        </div>
+        <div class="code">
+            <pre>int * bobby;
+bobby = new int [5];
+            </pre>
+        </div>
+        <div class="cont">
+            <p>C++ provides two standard methods to check if the allocation was successful:<br>
+                One is by handling exceptions. Using this method an exception of type bad_alloc is thrown when the allocation
+                fails. Exceptions are a powerful C++ feature explained later in these tutorials. But for now you should know that if
+                this exception is thrown and it is not handled by a specific handler, the program execution is terminated. <br>This exception method is the default method used by new, and is the one used in a declaration like: 
+            </p>
+        </div>
+        <div class="code">
+            <pre>bobby = new int [5]; <i>// if it fails an exception is thrown</i>
+            </pre>
+        </div>
+        <div class="cont">
+            <p>The other method is known as <em>nothrow</em>, and what happens when it is used is that when a memory allocation fails,
+                instead of throwing a <em>bad_alloc</em> exception or terminating the program, the pointer returned by new is a null
+                pointer, and the program continues its execution.<br>This method can be specified by using a special object called <em>nothrow</em>, declared in header <em>< new ></new></em>, as argument for
+                    <em>new</em>: 
+            </p>
+        </div>
+        <div class="code">
+            <pre>bobby = new (nothrow) int [5]; 
+            </pre>
+        </div>
+        <h3 id="delete">Operators delete and delete[] </h3>
+        <div class="cont">
+            <p>Since the necessity of dynamic memory is usually limited to specific moments within a program, once it is no
+                longer needed it should be freed so that the memory becomes available again for other requests of dynamic
+                memory. This is the purpose of the operator delete, whose format is:
+            </p>
+        </div>
+        <div class="code">
+            <pre>delete pointer;
+delete [] pointer;
+            </pre>
+        </div>
+        <div class="code">
+<pre>
+#include &lt;iostream&gt;
+#include <new>
+using namespace std;
+int main ()
+{
+    int i,n;
+    int * p;
+    cout << "How many numbers would you like to type? ";
+    cin >> i;
+    p= new (nothrow) int[i];
+    if (p == 0)
+        cout << "Error: memory could not be allocated";
+    else
+    {
+        for (n=0; n<i; n++)
+        {
+            cout << "Enter number: ";
+            cin >> p[n];
+        }
+        cout << "You have entered: ";
+        for (n=0; n < i; n++)
+            cout << p[n] << ", ";
+        delete[] p;
+    }
+    return 0;
+} 
+    </pre>
+        </div>
+        <div class="cont">
+            <p>output:</p>
+        </div>
+        <div class="code">
+<pre>How many numbers would you like to type? 5
+Enter number : 75
+Enter number : 436
+Enter number : 1067
+Enter number : 8
+Enter number : 32
+You have entered: 75, 436, 1067, 8, 32,</pre>
+        </div>
+        <h3 id="ansi">Dynamic memory in ANSI-C </h3>
+        <div class="cont">
+            <p>Operators new and delete are exclusive of C++. They are not available in the C language. But using pure C
+                language and its library, dynamic memory can also be used through the functions malloc, calloc, realloc and free,
+                which are also available in C++ including the < cstdlib > header file (see cstdlib for more info).<br>
+                The memory blocks allocated by these functions are not necessarily compatible with those returned by new, so
+                each one should be manipulated with its own set of functions or operators. 
+            </p>
+        </div>
+        
+        
+    </body>
+</html>
