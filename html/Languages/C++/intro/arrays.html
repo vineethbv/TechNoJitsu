@@ -1,8 +1,62 @@
-<html>
-    <head>
-        <title>arrays</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../../../css/Layout.css" />
+  
+  <link rel="stylesheet" href="../../../../css/langGuide.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="icon" href="../../../../img/icon/log2.png" type="image/x-icon" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!--Fonts-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>TechnoJitsu</title>
+</head>
+
+<body>
+  <!-- horizontal navbar -->
+  <nav class="navbar navbar-default " id="mNavbar">
+    <div class="container-fluid" id="navtop">
+      <div class="navbar-header">
+        <a id="txtdeco" href="../../../../TechNoJitsu.html">
+          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../../img/icon/Log.png" width="50" height="50"
+            class="d-inline-block align-top" />
+        </a>
+        <span><a id="head" href="../../../../TechNoJitsu.html">TechnoJitsu</a></span>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="vline"><a href="#">PROJECTS</a></li>
+        <li><a href="#">ARTICLES</a></li>
+        <li><a href="../../../../html/Languages/LangGuide.html">LANG-GUIDES</a></li>
+
+        
+
+        <li class="vline" id="sign_Up">
+          <a href="../../../../html/FORMS/sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li id="sign_In">
+          <a href="../../../../html/FORMS/sign_In.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container mainContLang ">
+    <div class="modal-content  container" > <h1 class="hd1" id="function">C FUNCTIONS</h1 >
+    
         <h2 id="array">Arrays</h2>
         <div class="cont">
             <p>An array is a series of elements of the same type placed in contiguous memory locations that can be individually
@@ -53,32 +107,26 @@
             <pre>name[index] 
             </pre>
         </div>
-        <div class="cont">
-            <p>example:</p>
-        </div>
-        <div class="code">
-<pre><i>// arrays example</i>
-#include &lt;iostream&gt;
+        <div class="tbl">
+            <table>
+                <tr>
+<td><pre><i>// arrays example</i>
+#include <iostream>
 using namespace std;
 int billy [] = {16, 2, 77, 40, 12071};
 int n, result=0;
 int main ()
 {
-    for ( n=0 ; n<5 ; n++ )
+    for ( n=0 ; n&lt;5 ; n++ )
     {
         result += billy[n];
     }
-    cout << result;
+    cout &lt;&lt; result;
     return 0;
 } 
-</pre>
-          
-        </div>
-        <div class="cont">
-            <p>output:</p>
-        </div>
-        <div class="code">
-            <pre>12206 </pre>
+    </pre><pre>12206 </pre>
+           
+
         </div>
     <h3 id="multi">Multidimensional arrays </h3>
     <div class="cont">
@@ -92,10 +140,8 @@ int main ()
         <pre>char century [100][365][24][60][60];
         </pre>
     </div>
-    <div class="cont">
-        <p>example:</p>
-    </div>
-    <div class="code">
+ <b>multidimensional array</b> 
+<div class="code">
 <pre>#define WIDTH 5
 #define HEIGHT 3
 int jimmy [HEIGHT][WIDTH];
@@ -109,12 +155,9 @@ int main ()
         }
     return 0;
 } </pre>
-    </div>
-    <h3 id="pseudo">pseudo-multidimensional array</h3>
-    <div class="cont">
-        <p>example:</p>
-    </div>
-    <div class="code">
+</div>
+<b>pseudo-multidimensional array </b>
+<div class="code">
 <pre>
 #define WIDTH 5
 #define HEIGHT 3
@@ -131,7 +174,9 @@ int main ()
 } 
     
 </pre>
-    </div>
+</div>
+    
+
     <h3 id="parameter">Arrays as parameters</h3>
     <div class="cont">
         <p>At some moment we may need to pass an array to a function as a parameter. In C++ it is not possible to pass a
@@ -166,7 +211,7 @@ int main ()
         <p>Here you have a complete example:
         </p>
     </div>
-    <div class="code">
+    
 <pre><i>// arrays as parameters</i>
 #include &lt;iostream&gt;
 using namespace std;
@@ -183,15 +228,9 @@ int main ()
     printarray (secondarray,5);
     return 0;
 }</pre>
-    </div>
-    <div classs="cont">
-        <P>output:</P>
-    </div>
-    <div class="code">
 <pre>5 10 15
 2 4 6 8 10
 </pre>
-    </div>
     </div>
     <div class="cont">
         <p>As you can see, the first parameter (int arg[]) accepts any array whose elements are of type int, whatever its
@@ -220,5 +259,65 @@ int main ()
             arrays operate
         </p>
     </div>
-    </body>
-</html>
+    </div>
+    </div>
+
+<!--Footer-->
+
+<footer class="footer-content">
+    <div class="jumbotron text-md-left">
+      <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
+      <div class="row">
+        <div class="col-md-5 " >
+          <img src="../../../../img/icon/Log.png" alt="footer-img" id="footer-img">
+          
+          <h3 class="footer-text text-left ">TechNoJitsu:</h3>
+          <p id="footercontent">
+            Technojitsu is an interactive, ever growing platform to design and develop projects, to acquire new and essential tech aspects without leaving behind the essential building blocks i.e. languages . All in all a tech pill to enhance and channel your creative & reasoning mind in the right output stream.
+          </p>
+        </div>
+      
+        <div class="col-md-2" id="footert">
+          <h4 class="text-uppercase  ">Projects</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">EMO Display</a></li>
+            <li><a href="#">Input Keypad with Led Matrix display </a></li>
+            <li><a href="#">Joystick module</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Articles</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Language Guides</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Java</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="footer-copyright text-center" id="cpyrgt">
+      © 2020 Copyright:
+      <a href="../../../../TechNoJitsu.html"> TechNoJitsu.com</a>
+    </div>
+  
+  </footer>
+  <!--Footer-->
+  <script>AOS.init();</script>
+  </body>
+  
+  </html>
+  
+  
+  
+  
