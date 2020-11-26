@@ -1,8 +1,62 @@
-<html>
-    <head>
-        <title>CONTROL STRUCTURE</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../../../css/Layout.css" />
+  <link rel="stylesheet" href="../../../../css/langGuide.css" />
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="icon" href="../../../../img/icon/log2.png" type="image/x-icon" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!--Fonts-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>TechnoJitsu</title>
+</head>
+
+<body>
+  <!-- horizontal navbar -->
+  <nav class="navbar navbar-default " id="mNavbar">
+    <div class="container-fluid" id="navtop">
+      <div class="navbar-header">
+        <a id="txtdeco" href="../../../../TechNoJitsu.html">
+          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../../img/icon/Log.png" width="50" height="50"
+            class="d-inline-block align-top" />
+        </a>
+        <span><a id="head" href="../../../../TechNoJitsu.html">TechnoJitsu</a></span>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="vline"><a href="#">PROJECTS</a></li>
+        <li><a href="#">ARTICLES</a></li>
+        <li><a href="../../../../html/Languages/LangGuide.html">LANG-GUIDES</a></li>
+
+        
+
+        <li class="vline" id="sign_Up">
+          <a href="../../../../html/FORMS/sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li id="sign_In">
+          <a href="../../../../html/FORMS/sign_In.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container mainContLang" id="content">
+    <div class="modal-content  container " ><h2 class="hd2" id="control">CONTROL STATEMENTS</h2>
+  
         <h2 id="control">Control Structures </h2>
         <div class="cont">
             <p>A program is usually not limited to a linear sequence of instructions. During its process it may bifurcate, repeat
@@ -82,7 +136,8 @@ else
         <h3 id="while">The while loop</h3>
         <div class="cont"><p>Its format is:</p></div>
         <div class="code">
-            <P>while (expression) statement</P>
+            <pre>while (expression) 
+{statements}</pre>
         </div>
         <div class="cont">
             <p>and its functionality is simply to repeat statement while the condition set in expression is true.
@@ -111,13 +166,15 @@ int main ()
 <pre>Enter the starting number > 8
 8, 7, 6, 5, 4, 3, 2, 1, FIRE! </pre>
         </div>
-        <h3 id="do">The do-while loop</h3>
+        <h3 id="dowhile">The do-while loop</h3>
         <div class="cont">
             <p>Its format is: 
             </p>
         </div>
         <div class="code">
-            <pre>do statement while (condition);</pre>
+            <pre>do 
+{statement}
+while(condition);</pre>
         </div>
         <div class="cont">
             <p>Its functionality is exactly the same as the while loop, except that condition in the do-while loop is evaluated after
@@ -328,13 +385,9 @@ int main ()
                 many case labels as values you want to check), the program will execute the statements included after the
                 default: label, if it exists (since it is optional).<br>Both of the following code fragments have the same behavior:  </p>
         </div>
-        <div class="tbl">
-            <table>
-<tr>
-    <td><b>switch example</b></td> <td><b>if-else equivalent </b></td>
-</tr>
-<tr>
-    <td>
+
+<b>switch example</b>
+<div class="code">
 <pre>switch (x) {
     case 1:
         cout << "x is 1";
@@ -344,9 +397,10 @@ int main ()
         break;
     default:
         cout << "value of x unknown";
-    }</pre>
-    </td>
-    <td>
+    }</pre></div>
+
+<div class="code">
+<b>if-else equivalent </b>
 <pre>if (x == 1) {
     cout << "x is 1";
     }
@@ -356,9 +410,63 @@ else if (x == 2) {
 else {
     cout << "value of x unknown";
     } </pre>
-    </td>
-</tr>
-            </table>
+  
+</div>
         </div>
-    </body>
+    </div>
+</div>
+  <!--Footer-->
+
+  <footer class="footer-content">
+    <div class="jumbotron text-md-left">
+      <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
+      <div class="row">
+        <div class="col-md-5 " >
+          <img src="../../../../img/icon/Log.png" alt="footer-img" id="footer-img">
+          
+          <h3 class="footer-text text-left ">TechNoJitsu:</h3>
+          <p id="footercontent">
+            Technojitsu is an interactive, ever growing platform to design and develop projects, to acquire new and essential tech aspects without leaving behind the essential building blocks i.e. languages . All in all a tech pill to enhance and channel your creative & reasoning mind in the right output stream.
+          </p>
+        </div>
+      
+        <div class="col-md-2" id="footert">
+          <h4 class="text-uppercase  ">Projects</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">EMO Display</a></li>
+            <li><a href="#">Input Keypad with Led Matrix display </a></li>
+            <li><a href="#">Joystick module</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Articles</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+            <li><a href="#">########</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="text-uppercase ">Language Guides</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Java</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+
+
+    <div class="footer-copyright text-center" id="cpyrgt">
+      © 2020 Copyright:
+      <a href="../../../../TechNoJitsu.html"> TechNoJitsu.com</a>
+    </div>
+ 
+  </footer>
+  <!--Footer-->
+  <script>AOS.init();</script>
+</body>
+
 </html>
