@@ -149,12 +149,10 @@ secondvalue is 20</pre></td>
                 Here is an example a little bit more elaborated:
             </p>
         </div>
-        <div class="tbl">
-            <table>
-                <tr>
-<td>
+        <div class="code">
+           
 <pre><i>// more pointers</i>
-#include <iostream>
+#include &lt;iostream&gt;
 using namespace std;
 int main ()
 {
@@ -171,12 +169,10 @@ p1
     cout << "secondvalue is " << secondvalue << endl;
     return 0;
 } 
-        </pre>
-</td> <td><pre>firstvalue is 10
-secondvalue is 20</pre></td>
-                </tr>
-            </table>
-        </div>
+        </pre></div>
+<pre>firstvalue is 10
+secondvalue is 20</pre>
+        
         <h3 id="pointer">Pointers and arrays </h3>
         <div class="cont">
             <p>The concept of array is very much bound to the one of pointer. In fact, the identifier of an array is equivalent to the
@@ -188,7 +184,7 @@ secondvalue is 20</pre></td>
             <pre>int numbers [20];
 int &ast; p;
             </pre>
-        </div
+        </div>
         <div class="cont">
             <p>The following assignment operation would be valid: 
             </p>
@@ -212,11 +208,9 @@ int &ast; p;
             <p>Because <em>numbers</em> is an array, so it operates as a constant pointer, and we cannot assign values to constants
             </p>
         </div>
-        <div class="tbl">
-            <table>
-                <tr>
-<td><pre><i>// more pointers</i>
-#include <iostream>
+        <div class="code">
+<pre><i>// more pointers</i>
+#include &lt;iostream&gt;
 using namespace std;
 int main ()
 {
@@ -227,14 +221,13 @@ int main ()
     p = &numbers[2]; &ast;p = 30;
     p = numbers + 3; &ast;p = 40;
     p = numbers; &ast;(p+4) = 50;
-    for (int n=0; n<5; n++)
+    for (int n=0; n&lt;5; n++)
         cout << numbers[n] << ", ";
     return 0;
     } 
-    </pre></td> <td><pre>10, 20, 30, 40, 50,</pre></td>
-                </tr>
-            </table>
-        </div>
+    </pre></div>
+    <pre>10, 20, 30, 40, 50,</pre>
+    
         <h3 id="initialization">Pointer initialization </h3>
         <div class="cont">
             <p>When declaring pointers we may want to explicitly specify which variable we want them to point to:
@@ -316,11 +309,10 @@ c = &b;
                 One of its uses may be to pass generic parameters to a function:
             </p>
         </div>  
-        <div class="tbl">
-            <table>
-                <tr><td><pre>
+        <div class="code">
+<pre>
 <i>// increaser</i>
-#include <iostream>
+#include &lt;iostream&gt;
 using namespace std;
 void increase (void&ast; data, int psize)
 {
@@ -337,10 +329,9 @@ int main ()
     increase (&b,sizeof(b));
     cout << a << ", " << b << endl;
     return 0;
-}</pre></td> <td><pre>y, 1603</pre></td>
-                </tr>
-            </table>
-        </div>
+}</pre></div>
+<pre>y, 1603</pre>
+        
         <h3 id="null">Null pointer </h3>
         <div class="cont">
             <p>A null pointer is a regular pointer of any pointer type which has a special value that indicates that it is not pointing
