@@ -1,0 +1,363 @@
+<html>
+    <head>
+        <title>classes(1)</title>
+    </head>
+    <body>
+        <h2 id="classes">classes</h2>
+        <div class="cont">
+            <p>A class is an expanded concept of a data structure: instead of holding only data, it can hold both data and
+                functions.<br>
+                An object is an instantiation of a class. In terms of variables, a class would be the type, and an object would be the
+                variable.<br>
+                Classes are generally declared using the keyword class, with the following format:
+            </p>
+        </div>
+        <div class="code">
+<pre>class class_name {
+access_specifier_1:
+member1;
+access_specifier_2:
+member2;
+...
+} object_names;</pre>
+        </div>
+        <div class="cont">
+            <p>Where class_name is a valid identifier for the class, object_names is an optional list of names for objects of this
+                class. The body of the declaration can contain members, that can be either data or function declarations, and
+                optionally access specifiers.<br>All is very similar to the declaration on data structures, except that we can now include also functions and
+                members, but also this new thing called access specifier. An access specifier is one of the following three
+                keywords: private, public or protected. These specifiers modify the access rights that the members following
+                them acquire: 
+            </p>
+        </div>
+        <div class="unl">
+            <ul>
+                <li>private members of a class are accessible only from within other members of the same class or from
+                    their friends.</li>
+                <li>protected members are accessible from members of their same class and from their friends, but also
+                        from members of their derived classes.</li>
+                <li>Finally, public members are accessible from anywhere where the object is visible. </li>   
+            </ul>
+        </div>
+        <div class="cont">
+            <p>For example: 
+            </p>
+        </div>
+        <div class="code">
+<pre>class CRectangle {
+int x, y;
+public:
+void set_values (int,int);
+int area (void);
+} rect;</pre>
+        </div>
+        <div class="cont">
+            <p>complete example of class CRectangle:
+            </p>
+        </div>
+        <div class="code">
+<pre><i>// classes example</i>
+#include &lt;iostream&gt;
+using namespace std;
+class CRectangle {
+    int x, y;
+    public:
+    void set_values (int,int);
+    int area () {return (x*y);}
+};
+void CRectangle::set_values (int a, int b) {
+    x = a;
+    y = b;
+}
+int main () {
+    CRectangle rect;
+    rect.set_values (3,4);
+    cout << "area: " << rect.area();
+    return 0;
+} 
+    </pre>
+        </div>
+        <div class="cont">
+            <p>output:
+            </p>
+        </div>
+        <div class="code">
+            <pre>area: 12</pre>
+        </div>
+        <div class="cont">
+            <p>One of the greater advantages of a class is that, as any other type, we can declare several objects of it. For
+                example, following with the previous example of class CRectangle, we could have declared the object rectb in
+                addition to the object rect: 
+            </p>
+        </div>
+        <div class="code">
+<pre><i>// example: one class, two objects</i>
+#include &lt;iostream&gt;
+using namespace std;
+class CRectangle {
+    int x, y;
+    public:
+    void set_values (int,int);
+    int area () {return (x*y);}
+};
+void CRectangle::set_values (int a, int b) {
+    x = a;
+    y = b;
+}
+int main () {
+    CRectangle rect, rectb;
+    rect.set_values (3,4);
+    rectb.set_values (5,6);
+    cout << "rect area: " << rect.area() << endl;
+    cout << "rectb area: " << rectb.area() << endl;
+    return 0;
+}</pre>
+        </div>
+        <div class="cont">
+            <p>output:
+            </p>
+        </div>
+        <div class="code">
+<pre>rect area: 12
+rectb area: 30</pre>
+        </div>
+        <h3 id="constructors">Constructors and destructors </h3>
+        <div class="cont">
+            <p>Objects generally need to initialize variables or assign dynamic memory during their process of creation to become
+                operative and to avoid returning unexpected values during their execution.<br> to implement CRectangle including a constructor:
+            </p>
+        </div>
+        <div class="code">
+<pre><i>// example: class constructor</i>
+#include &lt;iostream&gt;
+using namespace std;
+class CRectangle {
+    int width, height;
+    public:
+    CRectangle (int,int);
+    int area () {return (width*height);}
+};
+CRectangle::CRectangle (int a, int b) {
+    width = a;
+    height = b;
+}
+int main () {
+    CRectangle rect (3,4);
+    CRectangle rectb (5,6);
+    cout << "rect area: " << rect.area() << endl;
+    cout << "rectb area: " << rectb.area() << endl;
+    return 0;
+}</pre>
+        </div>
+        <div class="cont">
+            <p>output:
+            </p>
+        </div>
+        <div class="code">
+<pre>rect area: 12
+rectb area: 30</pre>
+        </div>
+        <h3 id="ovreloadingconst">Overloading Constructors </h3>
+        <div class="cont">
+            <p>Like any other function, a constructor can also be overloaded with more than one function that have the same
+                name but different types or number of parameters. Remember that for overloaded functions the compiler will call
+                the one whose parameters match the arguments used in the function call. In the case of constructors, which are
+                automatically called when an object is created, the one executed is the one that matches the arguments passed on
+                the object declaration:
+            </p>
+        </div>
+        <div class="code">
+<pre><i>// overloading class constructors</i>
+#include &lt;iostream&gt;
+using namespace std;
+class CRectangle {
+    int width, height;
+    public:
+    CRectangle ();
+    CRectangle (int,int);
+    int area (void) {return (width*height);}
+};
+CRectangle::CRectangle () {
+    width = 5;
+    height = 5;
+}
+CRectangle::CRectangle (int a, int b) {
+    width = a;
+    height = b;
+}
+int main () {
+    CRectangle rect (3,4);
+    CRectangle rectb;
+    cout << "rect area: " << rect.area() << endl;
+    cout << "rectb area: " << rectb.area() << endl;
+    return 0;
+} 
+</pre>
+        </div>
+        <div class="cont">
+            <p>output:
+            </p>
+        </div>
+        <div class="code">
+<pre>rect area: 12
+rectb area: 25</pre>
+        </div>
+        <div class="cont">
+            <p> Notice how if we declare a new object and we want to use its default constructor (the one without
+                parameters), we do not include parentheses ():
+            </p>
+        </div>
+        <div class="code">
+<pre>CRectangle rectb;      <i>// right</i>
+CRectangle rectb();    <i>// wrong!</i></pre>
+        </div>
+        <h3 id="defaultconst">Default constructor </h3>
+        <div class="cont">
+            <p>If you do not declare any constructors in a class definition, the compiler assumes the class to have a default
+                constructor with no arguments. Therefore, after declaring a class like this one:
+            </p>
+        </div>
+        <div class="code">
+<pre>class CExample {
+    public:
+        int a,b,c;
+        void multiply (int n, int m) { a=n; b=m; c=a*b; };
+    }; 
+   </pre>
+        </div>
+        <div class="cont">
+            <p>The compiler assumes that <em>CExample</em> has a default constructor, so you can declare objects of this class by simply
+                declaring them without any arguments:
+            </p>
+        </div>
+        <div class="code">
+            <pre>CExample ex;</pre>
+        </div>
+        <div class="cont">
+            <p>But as soon as you declare your own constructor for a class, the compiler no longer provides an implicit default
+                constructor. So you have to declare all objects of that class according to the constructor prototypes you defined for
+                the class:
+            </p>
+        </div>
+        <div class="code">
+<pre>class CExample {
+    public:
+        int a,b,c;
+        CExample (int n, int m) { a=n; b=m; };
+        void multiply () { c=a*b; };
+    }; </pre>
+        </div>
+        <div class="cont">
+            <p>Here we have declared a constructor that takes two parameters of type int. Therefore the following object
+                declaration would be correct:
+            </p>
+        </div>
+        <div class="code">
+            <pre>CExample ex (2,3);</pre>
+        </div>
+        <div class="cont">
+            <p>But,
+            </p>
+        </div>
+        <div class="code">
+            <pre>CExample ex;</pre>
+        </div>
+        <div class="cont">
+            <p>Would not be correct, since we have declared the class to have an explicit constructor, thus replacing the default
+                constructor.<br>
+                But the compiler not only creates a default constructor for you if you do not specify your own. It provides three
+                special member functions in total that are implicitly declared if you do not declare your own. These are the copy
+                constructor, the copy assignment operator, and the default destructor.<br>
+                The copy constructor and the copy assignment operator copy all the data contained in another object to the data
+                members of the current object. For <em>CExample</em>, the copy constructor implicitly declared by the compiler would be
+                something similar to:
+            </p>
+        </div>
+        <div class="code">
+<pre>CExample::CExample (const CExample& rv) {
+    a=rv.a; b=rv.b; c=rv.c;
+    } 
+   </pre>
+        </div>
+        <div class="cont">
+            <p>Therefore, the two following object declarations would be correct:
+            </p>
+        </div>
+        <div class="code">
+<pre>CExample ex (2,3);
+CExample ex2 (ex); <i>// copy constructor (data copied from ex)</i>
+</pre>
+        </div>
+        <h3 id="pointer">Pointers to classes </h3>
+        <div class="cont">
+            <p>It is perfectly valid to create pointers that point to classes. We simply have to consider that once declared, a class
+                becomes a valid type, so we can use the class name as the type for the pointer. For example: 
+            </p>
+        </div>
+        <div class="code">
+            <pre>CRectangle * prect;</pre>
+        </div>
+        <div class="cont">
+            <p>is a pointer to an object of class <em>CRectangle</em>.<br>
+                As it happened with data structures, in order to refer directly to a member of an object pointed by a pointer we can
+                use the arrow operator (->) of indirection. Here is an example with some possible combinations: 
+            </p>
+        </div>
+        <div class="code">
+<pre><i>// pointer to classes example</i>
+#include &lt;iostream&gt;
+using namespace std;
+class CRectangle {
+    int width, height;
+    public:
+    void set_values (int, int);
+    int area (void) {return (width * height);}
+};
+void CRectangle::set_values (int a, int b) {
+    width = a;
+    height = b;
+}
+int main () {
+    CRectangle a, *b, *c;
+    CRectangle * d = new CRectangle[2];
+    b= new CRectangle;
+    c= &a;
+    a.set_values (1,2);
+    b->set_values (3,4);
+    d->set_values (5,6);
+    d[1].set_values (7,8);
+    cout << "a area: " << a.area() << endl;
+    cout << "*b area: " << b->area() << endl;
+    cout << "*c area: " << c->area() << endl;
+    cout << "d[0] area: " << d[0].area() << endl;
+    cout << "d[1] area: " << d[1].area() << endl;
+    delete[] d;
+    delete b;
+    return 0;
+}</pre>
+        </div>
+        <div class="cont">
+            <p>output:
+            </p>
+        </div>
+        <div class="code">
+<pre>a area: 2
+*b area: 12
+*c area: 2
+d[0] area: 30
+d[1] area: 56</pre>
+        </div>
+        <h3 id="classwith">Classes defined with struct and union </h3>
+        <div class="cont">
+            <p>Classes can be defined not only with keyword <em>class</em>, but also with keywords <em>struct</em> and <em>union</em>.<br>
+                The concepts of class and data structure are so similar that both keywords (<em>struct</em> and <em>class</em>) can be used in C++
+                to declare classes (i.e. <em>structs</em> can also have function members in C++, not only data members). The only
+                difference between both is that members of classes declared with the keyword <em>struct</em> have public access by
+                default, while members of classes declared with the keyword <em>class</em> have private access. For all other purposes
+                both keywords are equivalent. <br>The concept of unions is different from that of classes declared with <em>struct</em> and <em>class</em>, since unions only store one
+                data member at a time, but nevertheless they are also classes and can thus also hold function members. The
+                default access in union classes is public.
+            </p>
+        </div>
+    </body>
+</html>
