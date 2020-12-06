@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Other Data Types </title>
+    </head>
+    <body>
+        <h2 id="other">Other Data Types </h2>
+        <h3 id="typedef">Defined data types (typedef)</h3>
+        <div class="cont">
+            <p>C++ allows the definition of our own types based on other existing data types. We can do this using the keyword
+                typedef, whose format is:                 
+            </p>
+        </div>
+        <div class="code">
+            <pre>typedef existing_type new_type_name ;</pre>
+        </div>
+        <div class="cont">
+            <p>where existing_type is a C++ fundamental or compound type and new_type_name is the name for the new type
+                we are defining. For example:
+            </p>
+        </div>
+        <div class="code">
+<pre>typedef char C;
+typedef unsigned int WORD;
+typedef char * pChar;
+typedef char field [50];</pre>
+        </div>
+        <div class="cont">
+            <p>In this case we have defined four data types: C, WORD, pChar and field as char, unsigned int, char* and
+                char[50] respectively, that we could perfectly use in declarations later as any other valid type:                 
+            </p>
+        </div>
+        <div class="code">
+<pre>C mychar, anotherchar, *ptc1;
+WORD myword;
+pChar ptc2;
+field name;</pre>
+        </div>
+        <div class="cont">
+            <p>typedef does not create different types. It only creates synonyms of existing types. That means that the type of
+                myword can be considered to be either WORD or unsigned int, since both are in fact the same type.<br>
+                typedef can be useful to define an alias for a type that is frequently used within a program. It is also useful to
+                define types when it is possible that we will need to change the type in later versions of our program, or if a type
+                you want to use has a name that is too long or confusing.
+            </p>
+        </div>
+        <h3 id="Unions">Unions</h3>
+        <div class="cont">
+            <p>Unions allow one same portion of memory to be accessed as different data types, since all of them are in fact the
+                same location in memory. Its declaration and use is similar to the one of structures but its functionality is totally
+                different:
+            </p>
+        </div>
+        <div class="code">
+<pre>union union_name {
+member_type1 member_name1;
+member_type2 member_name2;
+member_type3 member_name3;
+.
+.
+} object_names; 
+   </pre>
+        </div>
+        <h3 id="anonymous">Anonymous unions </h3>
+        <div class="cont">
+            <p>In C++ we have the option to declare anonymous unions. If we declare a union without any name, the union will
+                be anonymous and we will be able to access its members directly by their member names. For example, look at the
+                difference between these two structure declarations:
+            </p>
+        </div>
+        <h3 id="regular">structure with regular union</h3>
+        <div class="code">
+<pre>struct {
+char title[50];
+char author[50];
+union {
+float dollars;
+int yens;
+} price;
+} book;</pre>
+        </div>
+        <h3 id="anonymousunion">structure with anonymous union</h3>
+        <div class="code">
+<pre>struct {
+char title[50];
+char author[50];
+union {
+float dollars;
+int yens;
+};
+} book; 
+   </pre>
+        </div>
+        <div class="cont">
+            <p>The only difference between the two pieces of code is that in the first one we have given a name to the union
+                (price) and in the second one we have not. The difference is seen when we access the members dollars and
+                yens of an object of this type. For an object of the first type, it would be:
+            </p>
+        </div>
+        <div class="code">
+<pre>book.price.dollars
+book.price.yens</pre>
+        </div>
+        <div class="cont">
+            <p>whereas for an object of the second type, it would be:
+            </p>
+        </div>
+        <div class="code">
+<pre>book.dollars
+book.yens</pre>
+        </div>
+        <h3 id="enum">Enumerations (enum) </h3>
+        <div class="cont">
+            <p>Enumerations create new data types to contain something different that is not limited to the values fundamental
+                data types may take. Its form is the following: 
+            </p>
+        </div>
+        <div class="code">
+<pre>enum enumeration_name {
+value1,
+value2,
+value3,
+.
+.
+} object_names;</pre>
+        </div>
+        <div class="cont">
+            <p>For example, we could create a new type of variable called color to store colors with the following declaration:
+            </p>
+        </div>
+        <div class="code">
+<pre>enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre>
+        </div>
+    </body>
+</html>
