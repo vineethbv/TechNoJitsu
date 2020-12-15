@@ -206,13 +206,22 @@ int main()
             </p>
         </div>
         <div class="code">
-            <pre>typedef type newname;</pre>
+            <pre>typedef existing_type new_type_name ;</pre>
         </div>
         <div class="cont">
             <p> For example, the following tells the compiler that feet is another name for int:</p>       
         </div>
         <div class="code">
             <pre>typedef int feet;</pre>
+        </div>
+        <div class="cont">
+            <p>Few more examples: </p>       
+        </div>
+        <div class="code">
+            <pre>typedef char C;
+typedef unsigned int WORD;
+typedef char * pChar;
+typedef char field [50];</pre>
         </div>
         <div class="cont">
             <p>Now, the following declaration is perfectly legal and creates an integer variable called
