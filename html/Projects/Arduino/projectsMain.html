@@ -1,117 +1,206 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../css/Layout.css" />
+    <link rel="stylesheet" href="../../../css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../../../img/icon/log2.png" type="image/x-icon" />
+    <!--FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../../css/Layout.css" />
-  <link rel="stylesheet" href="../../../css/projectMain.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <link rel="icon" href="../../../img/icon/log2.png" type="image/x-icon" />
-  <!--FONTS-->
-  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js" ></script>
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+      integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ccb26cf81.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <title>TechnoJitsu</title>
+  </head>
 
-  <!--Icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/9ccb26cf81.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-  <title>TechnoJitsu</title>
-</head>
-
-<body>
-  <!-- horizontal navbar -->
-  <nav class="navbar navbar-default navbar-fixed">
-    <div class="container-fluid" id="navtop">
-      <div class="navbar-header">
-        <a id="txtdeco" href="#">
-          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../img/icon/Log.png" width="50" height="50" class="d-inline-block align-top" />
-        </a>
-        <span><a id="head" href="../../../TechNoJitsu.html">TechnoJitsu</a></span>
+  <body>
+    <!-- horizontal navbar -->
+    <nav
+      class="navbar navbar-default navbar-fixed"
+      id="menu"
+      class="menu"
+      style="z-index: 1"
+    >
+      <div class="container-fluid" id="navtop">
+        <div class="navbar-header">
+          <a id="txtdeco" href="#">
+            <img
+              class="img img-rounded imgstat"
+              alt="Navbar_logo"
+              src="../../../img/icon/Log.png"
+              width="50"
+              height="50"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <span
+            ><a id="head" href="../../../TechNoJitsu.html">TechnoJitsu</a></span
+          >
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="vline"><a href="#">PROJECTS</a></li>
+          <li><a href="#">ARTICLES</a></li>
+          <li>
+            <a href="../../../html/Languages/LangGuide.html">LANG-GUIDES</a>
+          </li>
+          <li class="vline">
+            <a href="../../../html/FORMS/sign_up.html"
+              ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+            >
+          </li>
+          <li>
+            <a href="../../../html/FORMS/sign_in.html"
+              ><span class="glyphicon glyphicon-log-in"></span> Login</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="vline"><a href="#">PROJECTS</a></li>
-        <li><a href="#">ARTICLES</a></li>
- <li><a href="../../../html/Languages/LangGuide.html">LANG-GUIDES</a></li>
-        <li class="vline">
-          <a href="../../../html/FORMS/sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-        </li>
-        <li>
-          <a href="../../../html/FORMS/sign_in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-        </li>
-        
-      </ul>
+    </nav>
+    <!-- horizontal navbar -->
+    <!--Content here-->
+    <div class="projectcontOuter">
+      <div class="modal-content text-center">
+        <h2>Welcome To Projects Section</h2>
+      </div>
     </div>
-  </nav>
-  <!-- horizontal navbar -->
-<!--Content here-->
 
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 
-
-<!--Content here-->
-  <canvas class="background"></canvas>
-  <script src="../../../jscripts/Form-Login/form.js"></script>
-  <!--Continue here-->
-   <!--Lower Contents END-->
-  <!--Footer-->
-
-  <footer class="footer-content ">
-    <div class="jumbotron text-left">
-       <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
-      <div class="row">
-        <div class="col-md-5 " >
-          <img src="../../../img/icon/Log.png" alt="footer-img" id="footer-img">
-          
-          <h3 class="footer-text text-left ">TechNoJitsu:</h3>
-          <p id="footercontent">
-          Technojitsu is an interactive, ever growing platform to design and develop projects, to acquire new and essential tech aspects without leaving behind the essential building blocks i.e. languages . All in all a tech pill to enhance and channel your creative & reasoning mind in the right output stream.
-          </p>
+    <div class="projectcont">
+      <div class="lab_item">
+        <div class="hexagon hexagon2">
+          <div class="hexagon-in1">
+            <div class="hexagon-in2" style="background-image: url('')"></div>
+          </div>
         </div>
-      
-        <div class="col-md-2" id="footert">
-          <h4 class="text-uppercase text-center ">Projects</h4>
-          <ul class="list-unstyled text-center"id="footer-div" >
-            <li><a href="#">EMO Display</a></li>
-            <li><a href="#">Input Keypad with Led Matrix display </a></li>
-            <li><a href="#">Joystick module</a></li>
-          </ul>
+      </div>
+      <div class="lab_item">
+        <div class="hexagon hexagon2">
+          <div class="hexagon-in1">
+            <div class="hexagon-in2" style="background-image: url()"></div>
+          </div>
         </div>
-        <div class="col-md-2">
-          <h4 class="text-uppercase text-center">Articles</h4>
-          <ul class="list-unstyled text-center" id="footetr-div">
-            <li><a href="#">########</a></li>
-            <li><a href="#">########</a></li>
-            <li><a href="#">########</a></li>
-          </ul>
+      </div>
+      <div class="lab_item">
+        <div class="hexagon hexagon2">
+          <div class="hexagon-in1">
+            <div class="hexagon-in2" style="background-image: url()"></div>
+          </div>
         </div>
-        <div class="col-md-2">
-          <h4 class="text-uppercase text-center">Language Guides</h4>
-          <ul class="list-unstyled text-center" id="footetr-div">
-            <li><a href="#">C</a></li>
-            <li><a href="#">C++</a></li>
-            <li><a href="#">Java</a></li>
-          </ul>
+      </div>
+      <div class="lab_item">
+        <div class="hexagon hexagon2">
+          <div class="hexagon-in1">
+            <div class="hexagon-in2" style="background-image: url()"></div>
+          </div>
         </div>
       </div>
     </div>
- 
 
+    <!--Content here-->
+    <!--Continue here-->
 
-    <div class="footer-copyright text-center"  id="cpyrgt">
-      © 2020 Copyright:
-      <a href="../../../TechNoJitsu.html"> TechNoJitsu.com</a>
-    </div>
- 
-  </footer>
-  <!--Footer-->
-</body>
+    <!--Lower Contents END-->
+    <!--Footer-->
 
+    <footer class="footer-content" style="z-index: 1">
+      <div class="jumbotron text-left">
+        <span class="ribbonfootz"
+          ><span class="ribbonfoot footer-text">Get In Touch!</span></span
+        >
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="../../../img/icon/Log.png"
+              alt="footer-img"
+              id="footer-img"
+            />
+
+            <h3 class="footer-text text-left">TechNoJitsu:</h3>
+            <p id="footercontent">
+              Technojitsu is an interactive, ever growing platform to design and
+              develop projects, to acquire new and essential tech aspects
+              without leaving behind the essential building blocks i.e.
+              languages . All in all a tech pill to enhance and channel your
+              creative & reasoning mind in the right output stream.
+            </p>
+          </div>
+
+          <div class="col-md-2" id="footert">
+            <h4 class="text-uppercase text-center">Projects</h4>
+            <ul class="list-unstyled text-center" id="footer-div">
+              <li><a href="#">EMO Display</a></li>
+              <li><a href="#">Input Keypad with Led Matrix display </a></li>
+              <li><a href="#">Joystick module</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-center">Articles</h4>
+            <ul class="list-unstyled text-center" id="footetr-div">
+              <li><a href="#">########</a></li>
+              <li><a href="#">########</a></li>
+              <li><a href="#">########</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-center">Language Guides</h4>
+            <ul class="list-unstyled text-center" id="footetr-div">
+              <li><a href="#">C</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">Java</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center" id="cpyrgt">
+        © 2020 Copyright:
+        <a href="../../../TechNoJitsu.html"> TechNoJitsu.com</a>
+      </div>
+    </footer>
+    <!--Footer-->
+  </body>
 </html>
