@@ -112,10 +112,6 @@ body {
   position: initial !important;
 }
 
-body {
-  background: #000;
-  margin-top: 20%;
-}
 .footer-text {
   font-family: "Josefin Sans", sans-serif;
   font-variant: small-caps;
