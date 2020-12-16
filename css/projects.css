@@ -82,22 +82,10 @@ body {
   height: 100px !important;
  
 }
-.projectcontOuter{
-    animation-name: spotlight;
-    animation-duration: 1.5s;
-    animation-timing-function:linear;
-}
 .projectcontOuter :hover{
     background: #b0dad4;
     color: black;
 }
- @keyframes spotlight {
-      0% { clip-path: circle(300px at 50% 50%); }
-      25% { clip-path: circle(50px at 50% 50%); }
-      50% { clip-path: circle(80px at 50% 50%); }
-      75% { clip-path: circle(100px at 50% 50%); }
-      100% { clip-path: circle(150px at 50% 50%); }
-    }
 stars {
   width: 1px;
   height: 1px;

@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../../css/Layout.css" />
+    <link rel="stylesheet" href="../../../../css/langGuide.css" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../../../css/Layout.css" />
-  <link rel="stylesheet" href="../../../../css/langGuide.css" />
-  
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <link rel="icon" href="../../../../img/icon/log2.png" type="image/x-icon" />
-  <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-  <!--Fonts-->
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../../../../img/icon/log2.png" type="image/x-icon" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"> </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>TechnoJitsu</title>
-</head>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+      integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>TechnoJitsu</title>
+  </head>
 
-<body>
-  <!-- horizontal navbar -->
-  <nav class="navbar navbar-default " id="mNavbar">
-    <div class="container-fluid" id="navtop">
-      <div class="navbar-header">
-        <a id="txtdeco" href="../../../../TechNoJitsu.html">
-          <img class="img img-rounded imgstat" alt="Navbar_logo" src="../../../../img/icon/Log.png" width="50" height="50"
-            class="d-inline-block align-top" />
-        </a>
-        <span><a id="head" href="../../../../TechNoJitsu.html">TechnoJitsu</a></span>
+  <body>
+    <!-- horizontal navbar -->
+    <nav class="navbar navbar-default" id="mNavbar">
+      <div class="container-fluid" id="navtop">
+        <div class="navbar-header">
+          <a id="txtdeco" href="../../../../TechNoJitsu.html">
+            <img
+              class="img img-rounded imgstat"
+              alt="Navbar_logo"
+              src="../../../../img/icon/Log.png"
+              width="50"
+              height="50"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <span
+            ><a id="head" href="../../../../TechNoJitsu.html"
+              >TechnoJitsu</a
+            ></span
+          >
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="vline">
+            <a href="../../../../html/Projects/projectsMain.html">PROJECTS</a>
+          </li>
+          <li><a href="#">ARTICLES</a></li>
+          <li>
+            <a href="../../../../html/Languages/LangGuide.html">LANG-GUIDES</a>
+          </li>
+
+          <li class="vline" id="sign_Up">
+            <a href="../../../../html/FORMS/sign_up.html"
+              ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+            >
+          </li>
+          <li id="sign_In">
+            <a href="../../../../html/FORMS/sign_In.html"
+              ><span class="glyphicon glyphicon-log-in"></span> Login</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="vline"><a href="#">PROJECTS</a></li>
-        <li><a href="#">ARTICLES</a></li>
-        <li><a href="../../../../html/Languages/LangGuide.html">LANG-GUIDES</a></li>
+    </nav>
+    <!-- horizontal navbar -->
 
-        
+    <div class="container mainContLang" id="content">
+      <div class="modal-content container">
+        <h2 class="hd2" id="dynamicmemory">VARIABLE</h2>
 
-        <li class="vline" id="sign_Up">
-          <a href="../../../../html/FORMS/sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-        </li>
-        <li id="sign_In">
-          <a href="../../../../html/FORMS/sign_In.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- horizontal navbar -->
-
-  <div class="container mainContLang" id="content">
-    <div class="modal-content  container " ><h2 class="hd2" id="dynamicmemory">VARIABLE</h2>
-    
         <h3 id="definition">Variable Definition in C++</h3>
         <div class="cont">
-            <p>A variable definition tells the compiler where and how much storage to create for the variable.
-                A variable definition specifies a data type, and contains a list of one or more variables of that
-                type as follows:
-            </p>
+          <p>
+            A variable definition tells the compiler where and how much storage
+            to create for the variable. A variable definition specifies a data
+            type, and contains a list of one or more variables of that type as
+            follows:
+          </p>
         </div>
         <div class="code">
-            <pre>type variable_list;</pre>
+          <pre>type variable_list;</pre>
         </div>
         <div class="cont">
-            <p>Here, type must be a valid C++ data type including char, w_char, int, float, double, bool or
-                any user-defined object, etc., and variable_list may consist of one or more identifier names
-                separated by commas. Some valid declarations are shown here:</p>
+          <p>
+            Here, type must be a valid C++ data type including char, w_char,
+            int, float, double, bool or any user-defined object, etc., and
+            variable_list may consist of one or more identifier names separated
+            by commas. Some valid declarations are shown here:
+          </p>
         </div>
         <div class="code">
-<pre>
+          <pre>
 int i, j, k;
 char c, ch;
 float f, salary;
 double d;
-</pre>
+</pre
+          >
         </div>
         <div class="cont">
-            <p>The line int i, j, k; both declares and defines the variables i, j and k; which instructs the
-                compiler to create variables named i, j and k of type int.<br>
-                Variables can be initialized (assigned an initial value) in their declaration. The initializer
-                consists of an equal sign followed by a constant expression as follows:
-                </p>
+          <p>
+            The line int i, j, k; both declares and defines the variables i, j
+            and k; which instructs the compiler to create variables named i, j
+            and k of type int.<br />
+            Variables can be initialized (assigned an initial value) in their
+            declaration. The initializer consists of an equal sign followed by a
+            constant expression as follows:
+          </p>
         </div>
         <div class="code">
-            <pre>type variable_name = value;</pre>
+          <pre>type variable_name = value;</pre>
         </div>
         <div class="cont">
-            <p>Some examples are:</p>
+          <p>Some examples are:</p>
         </div>
         <div class="code">
-<pre>extern int d = 3, f = 5;    <i> // declaration of d and f.</i>
+          <pre>extern int d = 3, f = 5;    <i> // declaration of d and f.</i>
 int d = 3, f = 5;           <i> // definition and initializing d and f.</i>
 byte z = 22;                <i> // definition and initializes z.</i>
 char x = 'x';               <i> // the variable x has the value 'x'.</i>
@@ -103,18 +144,23 @@ char x = 'x';               <i> // the variable x has the value 'x'.</i>
         </div>
         <h3 id="declaration">Variable Declaration in C++</h3>
         <div class="cont">
-            <p>A variable declaration provides assurance to the compiler that there is one variable existing
-                with the given type and name so that compiler proceed for further compilation without
-                needing complete detail about the variable. A variable declaration has its meaning at the time
-                of compilation only, compiler needs actual variable declaration at the time of linking of the
-                program.<br>A variable declaration is useful when you are using multiple files and you define your variable
-                in one of the files which will be available at the time of linking of the program. You will
-                use extern keyword to declare a variable at any place. Though you can declare a variable
-                multiple times in your C++ program, but it can be defined only once in a file, a function or a
-                block of code.<br>example:</p>
+          <p>
+            A variable declaration provides assurance to the compiler that there
+            is one variable existing with the given type and name so that
+            compiler proceed for further compilation without needing complete
+            detail about the variable. A variable declaration has its meaning at
+            the time of compilation only, compiler needs actual variable
+            declaration at the time of linking of the program.<br />A variable
+            declaration is useful when you are using multiple files and you
+            define your variable in one of the files which will be available at
+            the time of linking of the program. You will use extern keyword to
+            declare a variable at any place. Though you can declare a variable
+            multiple times in your C++ program, but it can be defined only once
+            in a file, a function or a block of code.<br />example:
+          </p>
         </div>
         <div class="code">
-<pre>#include &lt;iostream&gt;
+          <pre>#include &lt;iostream&gt;
 using namespace std;
 <i>// Variable declaration:</i>
 extern int a, b;
@@ -138,12 +184,14 @@ int main ()
 </pre>
         </div>
         <div class="cont">
-            <p>Same concept applies on function declaration where you provide a function name at the time
-                of its declaration and its actual definition can be given anywhere else. For example:
-                </p>
+          <p>
+            Same concept applies on function declaration where you provide a
+            function name at the time of its declaration and its actual
+            definition can be given anywhere else. For example:
+          </p>
         </div>
         <div class="code">
-            <pre>
+          <pre>
 <i>// function declaration</i>
 int func();
 int main()
@@ -160,25 +208,37 @@ int func()
         </div>
         <h3 id="rlvalues">Lvalues and Rvalues</h3>
         <div class="cont">
-            <p>There are two kinds of expressions in C++:</p>
+          <p>There are two kinds of expressions in C++:</p>
         </div>
         <div class="unl">
-            <ul>
-                <li><b>lvalue</b> : Expressions that refer to a memory location is called "lvalue" expression. An
-                    lvalue may appear as either the left-hand or right-hand side of an assignment.</li>
-                <li><b>rvalue</b> : The term rvalue refers to a data value that is stored at some address in
-                    memory. An rvalue is an expression that cannot have a value assigned to it which
-                    means an rvalue may appear on the right- but not left-hand side of an assignment.Variables are lvalues and so may appear on the left-hand side of an assignment. </li>
-                </ul>
+          <ul>
+            <li>
+              <b>lvalue</b> : Expressions that refer to a memory location is
+              called "lvalue" expression. An lvalue may appear as either the
+              left-hand or right-hand side of an assignment.
+            </li>
+            <li>
+              <b>rvalue</b> : The term rvalue refers to a data value that is
+              stored at some address in memory. An rvalue is an expression that
+              cannot have a value assigned to it which means an rvalue may
+              appear on the right- but not left-hand side of an
+              assignment.Variables are lvalues and so may appear on the
+              left-hand side of an assignment.
+            </li>
+          </ul>
         </div>
         <h3 id="local">Local Variables</h3>
         <div class="cont">
-            <p>Variables that are declared inside a function or block are local variables. They can be used
-                only by statements that are inside that function or block of code. Local variables are not
-                known to functions outside their own. Following is the example using local variables:</p>
+          <p>
+            Variables that are declared inside a function or block are local
+            variables. They can be used only by statements that are inside that
+            function or block of code. Local variables are not known to
+            functions outside their own. Following is the example using local
+            variables:
+          </p>
         </div>
         <div class="code">
-<pre>#include &lt;iostream&gt;
+          <pre>#include &lt;iostream&gt;
 using namespace std;
 int main ()
 {
@@ -196,14 +256,18 @@ int main ()
         </div>
         <h3 id="global">GlobalVariables</h3>
         <div class="cont">
-            <p>Global variables are defined outside of all the functions, usually on top of the program. The
-                global variables will hold their value throughout the life-time of your program.<br>
-                A global variable can be accessed by any function. That is, a global variable is available for
-                use throughout your entire program after its declaration. Following is the example using global
-                and local variables:</p>
+          <p>
+            Global variables are defined outside of all the functions, usually
+            on top of the program. The global variables will hold their value
+            throughout the life-time of your program.<br />
+            A global variable can be accessed by any function. That is, a global
+            variable is available for use throughout your entire program after
+            its declaration. Following is the example using global and local
+            variables:
+          </p>
         </div>
         <div class="code">
-            <pre>#include &lt;iostream&gt;
+          <pre>#include &lt;iostream&gt;
 using namespace std;
 <i>// Global variable declaration:</i>
 int g;
@@ -220,7 +284,7 @@ int main ()
 }                         
 </pre>
 
-<pre>#include &lt;iostream&gt;
+          <pre>#include &lt;iostream&gt;
 using namespace std;
 <i>// Global variable declaration:</i>
 int g = 20;
@@ -233,60 +297,68 @@ int main ()
 }
             </pre>
         </div>
-    </div>
-</div>
-  <!--Footer-->
-
-  <footer class="footer-content">
-    <div class="jumbotron text-md-left">
-      <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
-      <div class="row">
-        <div class="col-md-5 " >
-          <img src="../../../../img/icon/Log.png" alt="footer-img" id="footer-img">
-          
-          <h3 class="footer-text text-left ">TechNoJitsu:</h3>
-          <p id="footercontent">
-            Technojitsu is an interactive, ever growing platform to design and develop projects, to acquire new and essential tech aspects without leaving behind the essential building blocks i.e. languages . All in all a tech pill to enhance and channel your creative & reasoning mind in the right output stream.
-          </p>
-        </div>
-      
-        <div class="col-md-2" id="footert">
-          <h4 class="text-uppercase  ">Projects</h4>
-          <ul class="list-unstyled text-center">
-            <li><a href="#">EMO Display</a></li>
-            <li><a href="#">Input Keypad with Led Matrix display </a></li>
-            <li><a href="#">Joystick module</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4 class="text-uppercase ">Articles</h4>
-          <ul class="list-unstyled text-center">
-            <li><a href="#">########</a></li>
-            <li><a href="#">########</a></li>
-            <li><a href="#">########</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4 class="text-uppercase ">Language Guides</h4>
-          <ul class="list-unstyled text-center">
-            <li><a href="#">C</a></li>
-            <li><a href="#">C++</a></li>
-            <li><a href="#">Java</a></li>
-          </ul>
-        </div>
       </div>
     </div>
- 
+    <!--Footer-->
 
+    <footer class="footer-content">
+      <div class="jumbotron text-md-left">
+        <span class="ribbonfootz"
+          ><span class="ribbonfoot footer-text">Get In Touch!</span></span
+        >
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="../../../../img/icon/Log.png"
+              alt="footer-img"
+              id="footer-img"
+            />
 
-    <div class="footer-copyright text-center" id="cpyrgt">
-      © 2020 Copyright:
-      <a href="../../../../TechNoJitsu.html"> TechNoJitsu.com</a>
-    </div>
- 
-  </footer>
-  <!--Footer-->
-  <script>AOS.init();</script>
-</body>
+            <h3 class="footer-text text-left">TechNoJitsu:</h3>
+            <p id="footercontent">
+              Technojitsu is an interactive, ever growing platform to design and
+              develop projects, to acquire new and essential tech aspects
+              without leaving behind the essential building blocks i.e.
+              languages . All in all a tech pill to enhance and channel your
+              creative & reasoning mind in the right output stream.
+            </p>
+          </div>
 
+          <div class="col-md-2" id="footert">
+            <h4 class="text-uppercase">Projects</h4>
+            <ul class="list-unstyled text-center">
+              <li><a href="#">EMO Display</a></li>
+              <li><a href="#">Input Keypad with Led Matrix display </a></li>
+              <li><a href="#">Joystick module</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase">Articles</h4>
+            <ul class="list-unstyled text-center">
+              <li><a href="#">########</a></li>
+              <li><a href="#">########</a></li>
+              <li><a href="#">########</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase">Language Guides</h4>
+            <ul class="list-unstyled text-center">
+              <li><a href="#">C</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">Java</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center" id="cpyrgt">
+        © 2020 Copyright:
+        <a href="../../../../TechNoJitsu.html"> TechNoJitsu.com</a>
+      </div>
+    </footer>
+    <!--Footer-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
