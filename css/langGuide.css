@@ -1,24 +1,32 @@
-body{
+body {
   background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  overflow-x: hidden;
 }
-.navbar-default{
-  border-color: #777!important;
+
+.navbar-default {
+  border-color: #777 !important;
 }
+
 .dright {
   top: 0% !important;
 }
-.sidenavbtn{
+
+.sidenavbtn {
   background: none;
 }
-.sidenavbtn:hover{
+
+.sidenavbtn:hover {
   background: #09bb44;
 }
-.langGuideIntro{
+
+.langGuideIntro {
   padding: 20px;
 }
-#langGuideCont{
+
+#langGuideCont {
   padding: 30px;
 }
+
 .sideNav {
   position: fixed;
   cursor: pointer;
@@ -33,67 +41,98 @@ body{
   clip-path: circle(20px at 45px 33px);
 
 }
-  .sideNavicon {
-    border-radius: 20px;
-    padding: 0px 35px;
-    height: 26px;
-    margin-right: 80px;
-  }
- 
-  .sideNav:hover {
+
+.sideNavicon {
+  border-radius: 20px;
+  padding: 0px 35px;
+  height: 26px;
+  margin-right: 80px;
+}
+
+.sideNav:hover {
   animation-name: sidebar;
   animation-duration: .5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  }
-  @keyframes sidebar{
-    0%{clip-path: circle(20px at 45px 33px);}
-    25%{clip-path: circle(100px at 45px 33px);}
-    50%{clip-path: circle(200px at 45px 33px);}
-    75%{clip-path: circle(300px at 45px 33px);}
-    100%{clip-path: circle(300px at 45px 33px);}
+}
 
+@keyframes sidebar {
+  0% {
+    clip-path: circle(20px at 45px 33px);
   }
-  .sideNav:hover  .sideNavicon{
+
+  25% {
+    clip-path: circle(100px at 45px 33px);
+  }
+
+  50% {
+    clip-path: circle(200px at 45px 33px);
+  }
+
+  75% {
+    clip-path: circle(300px at 45px 33px);
+  }
+
+  100% {
+    clip-path: circle(300px at 45px 33px);
+  }
+
+}
+
+.sideNav:hover .sideNavicon {
   display: none;
-  }
-  .btnlink{
-    padding: 10px;
-  }
-  .sidenavbtn{
-    padding-left:  10px;
-  }
-.langBackground{
-position: absolute;
-display: block;
-top: 0;
-left: 0;
-z-index: -1;;
-  }
-.langGuideMainCont{
-  color: rgb(255, 255, 255);
 }
-.outerCont{
-  margin:40px 0px;
-  padding: 20px;
-}
-.innerCont{
+
+.btnlink {
   padding: 10px;
 }
-.LangContHead{
+
+.sidenavbtn {
+  padding-left: 10px;
+}
+
+.langBackground {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  ;
+}
+
+.langGuideMainCont {
+  color: rgb(255, 255, 255);
+}
+
+.outerCont {
+  margin: 40px 0px;
+  padding: 20px;
+}
+
+.innerCont {
+  padding: 10px;
+}
+
+.LangContHead {
   font-size: 30px;
   font-family: Alegreya Sans SC;
 }
-.mainContLang{
-  margin:50px;
+
+.mainContLang {
+  margin: 50px;
 }
-.cont{
+
+.cont {
   padding: 10px;
 }
-h1,h2,h3{
-  font-family: 'Josefin Sans', sans-serif!important;
+
+h1,
+h2,
+h3 {
+  font-family: 'Josefin Sans', sans-serif !important;
 }
-.navbar-left{
+
+.navbar-left {
   background-image: url("../img/icon/Colorful\ Glowing\ Background\ Vector.jpg");
   background-position-x: 0px;
   border-radius: 10px;
@@ -103,21 +142,39 @@ h1,h2,h3{
   animation-timing-function: linear;
   animation-direction: alternate-reverse;
 }
-@keyframes navLeft{
-  0%{background-position-x: 100%;}
-  25%{background-position-x: 75%;}
-  50%{background-position-x: 50%;}
-  75%{background-position-x: 25%;}
-  100%{background-position-x: 0%;}
+
+@keyframes navLeft {
+  0% {
+    background-position-x: 100%;
+  }
+
+  25% {
+    background-position-x: 75%;
+  }
+
+  50% {
+    background-position-x: 50%;
+  }
+
+  75% {
+    background-position-x: 25%;
+  }
+
+  100% {
+    background-position-x: 0%;
+  }
 }
-ul>li>a{
-  mix-blend-mode: luminosity!important;
-  color: black!important;
+
+.nav>li>a {
+  mix-blend-mode: luminosity !important;
+  color: black !important;
 }
-ul >li>a:hover{
+
+.nav>li>a:hover {
   border-radius: 10px;
 }
-ul>li>.vline{
+
+.nav>li>.vline {
   border-radius: 10px;
   text-shadow: -9px 4px 11px #000000;
 }
