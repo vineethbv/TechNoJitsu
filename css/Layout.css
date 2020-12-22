@@ -3,17 +3,21 @@ body {
   text-align: left !important;
   overflow-x: auto;
 }
+
 ::-webkit-scrollbar {
   width: 15px;
 }
+
 ::-webkit-scrollbar-track {
   background: mistyrose;
 }
+
 ::-webkit-scrollbar-track-piece {
   background: mistyrose;
   border-top-left-radius: 135px;
   border-bottom-right-radius: 135px;
 }
+
 ::-webkit-scrollbar-button {
   background-color: #27e055;
   border-top-left-radius: 130px;
@@ -28,42 +32,45 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(42 227 56 / 70%),
-    rgb(221 177 18 / 62%) 100%
-  );
+  background: -webkit-linear-gradient(45deg,
+      rgb(42 227 56 / 70%),
+      rgb(221 177 18 / 62%) 100%);
 }
+
 .vline {
   border-left: 3px solid rgb(199, 155, 35);
 }
+
 #head {
   text-decoration: none;
   font-size: 30px;
   font-family: Alegreya Sans SC;
   text-shadow: 4px 2px 3px #3333334d;
 }
+
 .imgstat {
   margin-bottom: 0px;
   padding-bottom: 2px;
 }
+
 #txtdeco {
   text-decoration: none;
 }
+
 #navtop {
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(42 227 56 / 70%),
-    rgb(221 177 18 / 62%) 100%
-  );
+  background: -webkit-linear-gradient(45deg,
+      rgb(42 227 56 / 70%),
+      rgb(221 177 18 / 62%) 100%);
   border-bottom: 5px solid rgb(199, 155, 35);
 }
+
 .dropdown {
   background-color: transparent;
   border-color: transparent;
   color: gray;
   outline: none;
 }
+
 #navtop:not {
   background: transparent;
 }
@@ -73,16 +80,20 @@ body {
   border-bottom: 5px solid #c79b23;
   color: rgba(63, 61, 61, 0.651);
 }
+
 .dropdown-menu {
   background: #65d825b0 !important;
 }
-.navbar-nav > li > a {
+
+.navbar-nav>li>a {
   color: #555 !important;
 }
-.navbar-nav > .open > a {
+
+.navbar-nav>.open>a {
   background-color: #65d825b0 !important;
 }
-.navbar-nav > li > a:hover {
+
+.navbar-nav>li>a:hover {
   background-color: #65d825b0 !important;
   color: black !important;
 }
@@ -105,10 +116,11 @@ body {
   border-right: 3px solid black;
 }
 
-.row > .row1 {
+.row>.row1 {
   position: initial !important;
 }
-.row > .col {
+
+.row>.col {
   position: initial !important;
 }
 
@@ -117,12 +129,14 @@ body {
   font-variant: small-caps;
   font-weight: 300;
 }
+
 #footercontent {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   font-size: 15px;
   padding: 4px;
 }
+
 #footer-img {
   float: left;
   width: 100px;
@@ -132,32 +146,30 @@ body {
   border-radius: 30px;
 }
 
-.footer-content > .jumbotron {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgb(134 226 111)),
-    to(rgb(221 206 106))
-  );
+.footer-content>.jumbotron {
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(rgb(134 226 111)),
+      to(rgb(221 206 106)));
   padding-right: 20px !important;
 }
 
 .footer-content {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#27e055),
-    to(#bff812)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#27e055),
+      to(#bff812));
   left: 0;
   bottom: 0;
 }
+
 #footert {
   border-left: solid;
   padding-left: 10px;
 }
+
 .ribbonfoot {
   position: relative;
   top: 6px;
@@ -170,6 +182,7 @@ body {
   border-bottom-right-radius: 135px;
   margin-left: -5px;
 }
+
 .ribbonfootz {
   position: relative;
   top: -55px;
@@ -180,10 +193,12 @@ body {
   border-bottom-right-radius: 135px;
   box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
 }
+
 #footerLinks {
   transform: translateX(-100px);
   float: right;
 }
+
 #footerLinksTxt {
   transform: translateX(339px);
 }
@@ -195,20 +210,24 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .social-round-icon:hover {
   background-color: #58da12;
   color: #838383;
   border-color: #58da12;
 }
+
 .social-round-icon.orange-round-icon {
   border: 1px solid #838383;
   color: #838383;
 }
+
 .social-round-icon.orange-round-icon:hover {
   background-color: #838383;
   color: #58da12;
   border-color: #838383;
 }
+
 .fa-icon {
   color: #838383;
   width: 32px;
@@ -218,13 +237,16 @@ body {
   font-size: 15px;
   text-align: center;
 }
+
 #cpyrgt {
   margin-top: -16px;
 }
+
 .footer {
   position: relative;
   padding: 10px;
 }
+
 .text-uppercase {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -286,3 +308,6 @@ body {
   width: 100%;
 }
 
+footer>.jumbotron {
+  position: relative;
+}
