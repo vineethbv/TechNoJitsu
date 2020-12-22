@@ -5,6 +5,7 @@ body {
 
 .navbar-default {
   border-color: #777 !important;
+  z-index: 1 !important;
 }
 
 .dright {
