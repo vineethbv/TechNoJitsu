@@ -4,7 +4,7 @@ body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
 }
 
-.lab_item {
+.project_item {
   width: 200px;
   height: 230px;
   position: relative;
@@ -673,4 +673,54 @@ stars {
 .projectIcon2 {
   background-size: 90%;
   background-color: #fff;
+}
+
+.projectIcon3 {
+  background-size: 100%;
+  background-color: #fff;
+}
+
+.projectIcon4 {
+  background-size: 120%;
+  background-color: #fff;
+}
+
+.projectIcon5 {
+  background-size: 90%;
+  background-color: #fff;
+}
+
+
+.overHead {
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  transform: translate(14%, 166px);
+  font-size: x-large;
+}
+
+.hexagon-in2:hover .overHead {
+  visibility: hidden;
+}
+
+.projectcont2 {
+  z-index: 1;
+  align-content: center;
+  width: 60%;
+  height: 30%;
+  padding: 10px;
+  transform: translate(300px, 0px);
+  background: none;
+  padding-bottom: 200px;
+}
+
+.Section1 {
+  transform: translate(50px, 60px);
+  color: #98e6d6;
+  width: fit-content;
+}
+
+.Section2 {
+  transform: translate(50px, -10px);
+  color: #98e6d6;
+  width: fit-content;
 }
