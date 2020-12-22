@@ -665,6 +665,12 @@ stars {
   }
 }
 
-.projectIcon {
-  background-size: cover;
+.projectIcon1 {
+  background-size: 202%;
+  background-color: #84f0d8;
+}
+
+.projectIcon2 {
+  background-size: 90%;
+  background-color: #fff;
 }
