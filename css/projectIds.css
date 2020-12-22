@@ -1,7 +1,9 @@
 body {
-    background: rgb(255, 255, 255);
-    margin-top: 20%;
-  }
-.proCont{
-    padding-bottom: 50px;
+  background: rgb(255, 255, 255);
+  margin-top: 20%;
+  overflow-x: hidden;
+}
+
+.proCont {
+  padding-bottom: 50px;
 }
