@@ -151,7 +151,7 @@ int main( )
 </div>
 <div class="cont">
     <b>Output:</b>
-    <br>Memory size occupied by data : 20
+    <pre>Memory size occupied by data : 20</pre>
 </div>
 <h3 id="accessunion">Accessing Union Members</h3>
 <div class="cont">
@@ -234,12 +234,20 @@ The C programming language provides a keyword called typedef, which you can use
 to give a type a new name. Following is an example to define a term BYTE for one-byte
 numbers:
 </div>
-<div class="code">typedef unsigned char BYTE;</div>
+<div class="code">
+<pre>
+  typedef unsigned char BYTE;
+</pre>
+</div>
 <div class="cont">
 After this type definitions, the identifier BYTE can be used as an abbreviation for the
 type unsigned char, for example:
 </div>
-<div class="code">BYTE b1, b2;</div>
+<div class="code">
+<pre>
+BYTE b1, b2;
+</pre>
+</div>
 <div class="cont">
     You can use typedef to give a name to user defined data type as well. For example you can
     use typedef with structure to define a new data type and then use that data type to define
