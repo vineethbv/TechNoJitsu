@@ -9,12 +9,11 @@ const init=function()
 }
 function checkPassword()
 {
-    if(document.getElementById("name").value == username && document.getElementById("password").value == password)
+    if(document.getElementById("name").value == localStorage.getItem('username') && document.getElementById("password").value == localStorage.getItem('password'))
   {
     localStorage.setItem('flag',1);
     alert("Login was Successful, Welcome Back!");
-    window.open('../../TechNoJitsu.html');
-    
+    window.open('../../TechNoJitsu.html');    
   }
   else
   {
@@ -31,10 +30,9 @@ function logCheck()
         if(flag2==true)
         { 
             localStorage.setItem('flag',0);
-           
         }
         else
-        window.open('../../TechNoJitsu.html');
+        location.href ="TechNoJitsu.html";
     }
     
 }

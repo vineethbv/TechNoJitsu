@@ -1,9 +1,9 @@
 body {
-    height: 100%!important;
-    overflow-x: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)!important;
-  }
-  
+  height: 100% !important;
+  overflow-x: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+}
+
 .lab_item {
   width: 200px;
   height: 230px;
@@ -61,6 +61,7 @@ body {
   -webkit-box-shadow: inset 0 0 0 0px #b0dad4;
   box-shadow: inset 0 0 0 0px #b0dad4;
 }
+
 .projectcont {
   z-index: 1;
   align-content: center;
@@ -71,22 +72,25 @@ body {
   background: none;
   padding-bottom: 200px;
 }
+
 .projectcontOuter .modal-content {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  font-size: 50px;  
+  font-size: 50px;
   transform: translate(15%, 20%);
   background: none;
   color: #b0dad4;
   font-weight: 200px;
   width: 80% !important;
   height: 100px !important;
- 
+
 }
-.projectcontOuter :hover{
-    background: #b0dad4;
-    color: black;
+
+.projectcontOuter :hover {
+  background: #b0dad4;
+  color: black;
 }
+
 stars {
   width: 1px;
   height: 1px;
@@ -272,6 +276,7 @@ stars {
     1017px 290px #fff;
   animation: animStar 50s linear infinite;
 }
+
 #stars:after {
   content: " ";
 
@@ -518,6 +523,7 @@ stars {
     1890px 1201px #fff, 50px 1102px #fff, 782px 477px #fff;
   animation: animStar 100s linear infinite;
 }
+
 #stars2:after {
   content: " ";
 
@@ -612,6 +618,7 @@ stars {
     731px 617px #fff;
   animation: animStar 150s linear infinite;
 }
+
 #stars3:after {
   content: " ";
 
@@ -652,7 +659,12 @@ stars {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }
+}
+
+.projectIcon {
+  background-size: cover;
 }

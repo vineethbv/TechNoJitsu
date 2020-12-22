@@ -2,5 +2,6 @@ var particles = Particles.init({
 	selector: '.background',
   color: '#DA0463'
 });
-var username = "Admin"; 
-var password = "AdminOfPage*123";
+
+localStorage.setItem("username", "Admin");
+localStorage.setItem("password", "AdminOfPage*123");
