@@ -5,9 +5,9 @@ var particles = Particles.init({
 var username = "Admin"; 
 var password = "AdminOfPage*123";
 
-function checkPassword(form)
+function checkPassword()
 {
-  if(form.name.value == username && form.pass.value == password)
+  if(document.getElementsById("name").value == username && document.getElementsById("name").value == password)
   {
     window.open("/TechNoJitsu.html");
   }
