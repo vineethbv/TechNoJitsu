@@ -167,7 +167,6 @@ body {
 
 #footert {
   border-left: solid;
-  padding-left: 10px;
 }
 
 .ribbonfoot {
@@ -310,4 +309,8 @@ body {
 
 footer>.jumbotron {
   position: relative;
+}
+
+.footCol {
+  text-decoration: underline;
 }
