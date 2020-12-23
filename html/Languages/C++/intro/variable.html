@@ -79,10 +79,8 @@
     </nav>
      <!-- horizontal navbar -->
 
-    <div class="container mainContLang" id="content">
-      <div class="modal-content container">
-        <h2 class="hd2" id="dynamicmemory">VARIABLE</h2>
-
+     <div class="container mainContLang" id="content">
+      <div class="modal-content  container " ><h2 class="hd2" id="datatype">VRIABLE</Datag></h2>
         <h3 id="definition">Variable Definition in C++</h3>
         <div class="cont">
           <p>
@@ -91,7 +89,20 @@
             type, and contains a list of one or more variables of that type as
             follows:
           </p>
-        </div>
+          <p>Variable names can contain alphabets numbers and underscore. Variable name never starts with a 
+          number and its case sensitive also. These are the predefined types :</p>
+   </div>
+   <div>
+   <table  class="table" border="2">
+       <tr><th>TYPE</th><th>DESCRIPTION</th></tr>
+       <tr><td>Char</td><td> Typically a single octet(one byte). This is an integer type.</td></tr>
+       <tr><td>Int</td><td> The most natural size of integer for the machine.</td></tr>
+       <tr><td>Float</td><td> A single-precision floating point value.</td></tr>
+       <tr><td>Double</td><td> A double-precision floating point value.</td></tr>
+       <tr><td>Void</td><td> Represents the absence of type.</td></tr>
+   
+   </table>
+   </div>
         <div class="code">
           <pre>type variable_list;</pre>
         </div>
@@ -105,11 +116,11 @@
         </div>
         <div class="code">
           <pre>
-int i, j, k;
-char c, ch;
-float f, salary;
-double d;
-</pre
+  int i, j, k;
+  char c, ch;
+  float f, salary;
+  double d;
+  </pre
           >
         </div>
         <div class="cont">
@@ -130,10 +141,10 @@ double d;
         </div>
         <div class="code">
           <pre>extern int d = 3, f = 5;    <i> // declaration of d and f.</i>
-int d = 3, f = 5;           <i> // definition and initializing d and f.</i>
-byte z = 22;                <i> // definition and initializes z.</i>
-char x = 'x';               <i> // the variable x has the value 'x'.</i>
-</pre>
+  int d = 3, f = 5;           <i> // definition and initializing d and f.</i>
+  byte z = 22;                <i> // definition and initializes z.</i>
+  char x = 'x';               <i> // the variable x has the value 'x'.</i>
+  </pre>
         </div>
         <h3 id="declaration">Variable Declaration in C++</h3>
         <div class="cont">
@@ -154,13 +165,13 @@ char x = 'x';               <i> // the variable x has the value 'x'.</i>
         </div>
         <div class="code">
           <pre>#include &lt;iostream&gt;
-using namespace std;
-<i>// Variable declaration:</i>
-extern int a, b;
-extern int c;
-extern float f;             
-int main ()
-{
+  using namespace std;
+  <i>// Variable declaration:</i>
+  extern int a, b;
+  extern int c;
+  extern float f;             
+  int main ()
+  {
     <i>// Variable definition:</i>
     int a, b;
     int c;
@@ -173,8 +184,8 @@ int main ()
     f = 70.0/3.0;
     cout << f << endl ;
     return 0
-}
-</pre>
+  }
+  </pre>
         </div>
         <div class="cont">
           <p>
@@ -185,18 +196,18 @@ int main ()
         </div>
         <div class="code">
           <pre>
-<i>// function declaration</i>
-int func();
-int main()
-{
+  <i>// function declaration</i>
+  int func();
+  int main()
+  {
     <i>// function call</i>
     int i = func();
-}
-<i>// function definition</i>
-int func()
-{
+  }
+  <i>// function definition</i>
+  int func()
+  {
     return 0;
-}                
+  }                
             </pre>
         </div>
         <h3 id="rlvalues">Lvalues and Rvalues</h3>
@@ -232,9 +243,9 @@ int func()
         </div>
         <div class="code">
           <pre>#include &lt;iostream&gt;
-using namespace std;
-int main ()
-{
+  using namespace std;
+  int main ()
+  {
     <i>// Local variable declaration:</i>
     int a, b;
     int c;
@@ -244,7 +255,7 @@ int main ()
     c = a + b;
     cout << c;
     return 0;
-}
+  }
             </pre>
         </div>
         <h3 id="global">GlobalVariables</h3>
@@ -261,11 +272,11 @@ int main ()
         </div>
         <div class="code">
           <pre>#include &lt;iostream&gt;
-using namespace std;
-<i>// Global variable declaration:</i>
-int g;
-int main ()
-{
+  using namespace std;
+  <i>// Global variable declaration:</i>
+  int g;
+  int main ()
+  {
     <i>// Local variable declaration:</i>
     int a, b;
     <i>// actual initialization</i>
@@ -274,24 +285,25 @@ int main ()
     g = a + b;
     cout << g;
     return 0;
-}                         
-</pre>
-
+  }                         
+  </pre>
+  
           <pre>#include &lt;iostream&gt;
-using namespace std;
-<i>// Global variable declaration:</i>
-int g = 20;
-int main ()
-{
+  using namespace std;
+  <i>// Global variable declaration:</i>
+  int g = 20;
+  int main ()
+  {
     <i>// Local variable declaration:</i>
     int g = 10;
     cout << g;
     return 0;
-}
+  }
             </pre>
         </div>
-      </div>
+  
     </div>
+  </div>
          
    <script src="../../../../jscripts/Loginlogic.js"></script>
    <!--Footer-->
