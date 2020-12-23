@@ -54,3 +54,8 @@ fieldset {
 .modal-content {
     border: none !important;
 }
+
+.required::after {
+    color: red;
+    content: " *";
+}

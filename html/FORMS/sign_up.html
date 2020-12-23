@@ -71,11 +71,11 @@
     <form class="horizontal">
     <div class="form-row">
       <div class="col-md-4">
-        <label for="firstName" >First Name: </label>
+        <label for="firstName " >First Name:<span class="required"></span> </label>
         <input type="text"  pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control" title="Use only alphabets,digits and underscore" placeholder="Enter first name" required>
       </div>
       <div class="col-md-4">
-        <label for="lastName" >Last Name: </label>
+        <label for="lastName" >Last Name: <span class="required"></span> </label>
         <input type="text"  pattern="^[a-zA-Z]{1,20}$"  class="form-control"  title="Use only alphabets,digits and underscore"  placeholder="Enter last name" >
       </div>
       <div class="col-md-4 profileUpload">
@@ -86,33 +86,33 @@
       </div>
     </div>
     <div class="form-group col-md-12 ">
-      <label for="email">Email:</label>
+      <label for="email">Email:<span class="required"></span> </label>
       <input type="email" class="form-control " id="email" placeholder=" Enter Your Email Address "required>
     </div>
    <div class="form-row">
     <div class="col-md-5">
-      <label for="password">Password:</label>
-      <input type="password" class="form-control validate" id="password" placeholder=" Enter Your password here " minlength="8"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <label for="password">Password:<span class="required"></span> </label>
+      <input type="password" class="form-control validate " id="password" placeholder=" Enter Your password here " minlength="8"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
     </div>
     <div class="col-md-5">
-      <label for="conPassword">Confrim Password:</label>
-      <input type="password" class="form-control validate" id="conPassword" placeholder=" Enter Your password here " minlength="8" on="passwordVerify()"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <label for="conPassword">Confrim Password:<span class="required chekPass"></span> </label>
+      <input type="password" class="form-control validate " id="conPassword" placeholder=" Enter Your password here " minlength="8" oninput="passwordVerify()"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
     </div>  
    </div>
    <div class="form-group col-md-2 ">
      <label for="dOB">Date Of Birth:</label>
-     <input type="date" name="dOB" id="dOB" required>
+     <input type="date" name="dOB" id="dOB" >
    </div>
    <div class="form-group col-md-12 ">
      <label for="contactNo">Contact Number:</label>
-     <input type="tel" id="contactNo" class="form-control" name="contactNo" placeholder="+XX XXXXX XXXXX" required >
+     <input type="tel" id="contactNo" class="form-control" name="contactNo" placeholder="+XX XXXXX XXXXX" >
    </div>
    
    <div class="form-group col-md-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="Check" required>
       <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
+        Agree to terms and conditions<span class="required"></span> 
       </label>
       
     </div>
@@ -125,7 +125,7 @@
     <a class="btn btn-primary btn-block  btncss"  title="Already have an account?" href="../../html/FORMS/sign_In.html ">Login</a>
     </div>
     <div class="form-group col-md-7">
-      <button type="submit" id="login" class="btn btn-success btn-block btncss " >Register</button>
+      <button type="submit" id="login" class="btn btn-success btn-block btncss " onclick="createAcct()">Register</button>
     </div>
    </div>
    
@@ -139,6 +139,7 @@
  
   <canvas class="background"></canvas>
   <script src="../../jscripts/Form-Login/form.js"></script>
+  <script src="../../jscripts/Form-Login/signUp.js"></script>
   <script src="../../jscripts/Loginlogic.js"></script>
 <!--Footer-->
 <footer class="footer-content">
