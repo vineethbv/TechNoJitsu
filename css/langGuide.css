@@ -40,6 +40,7 @@ body {
   font-family: sans-serif;
   border-radius: 6px;
   clip-path: circle(20px at 45px 33px);
+  transform: translateY(48px);
 
 }
 
@@ -125,6 +126,7 @@ body {
 
 .cont {
   padding: 10px;
+  font-size: 18px;
 }
 
 h1,
@@ -136,12 +138,14 @@ h3 {
 .navbar-left {
   background-image: url("../img/icon/Colorful\ Glowing\ Background\ Vector.jpg");
   background-position-x: 0px;
+  background-size: cover;
   border-radius: 10px;
   animation-name: navLeft;
   animation-duration: 90s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate-reverse;
+  transform: translateY(30px);
 }
 
 @keyframes navLeft {
@@ -166,9 +170,12 @@ h3 {
   }
 }
 
-.nav>li>a {
+.sideLeft>li>a {
   mix-blend-mode: luminosity !important;
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-variant-caps: petite-caps;
+  font-size: 14px;
 }
 
 .nav>li>a:hover {
@@ -178,4 +185,21 @@ h3 {
 .nav>li>.vline {
   border-radius: 10px;
   text-shadow: -9px 4px 11px #000000;
+}
+
+.langTitle {
+  font-family: 'Josefin Sans', sans-serif !important;
+  color: #4fbe0f;
+}
+
+#langguide {
+  color: #4fbe0f;
+}
+
+.cont>ol>li {
+  padding: 10px;
+}
+
+.langGuideMain {
+  padding-left: 48px;
 }
