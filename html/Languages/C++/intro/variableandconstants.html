@@ -66,95 +66,227 @@
  
   <div class="container mainContLang" id="content">
     <div class="modal-content  container " ><h2 class="hd2" id="datatype">VRIABLE & CONSTANTS</Datag></h2>
-  
-<div class="cont">
-    <p>A variable is nothing but a name given to a storage area that our programs can
-        manipulate. Each variable in C has a specific type, which determines the size and layout of
-        the variable's memory; the range of values that can be stored within that memory; and the
-        set of operations that can be applied to the variable.<br>
-       Variable names can contain alphabets numbers and underscore. Variable name never starts with a 
-       number and its case sensitive also. These are the predefined types :</p>
-</div>
-<div>
-<table  class="table" border="2">
-    <tr><th>TYPE</th><th>DESCRIPTION</th></tr>
-    <tr><td>Char</td><td> Typically a single octet(one byte). This is an integer type.</td></tr>
-    <tr><td>Int</td><td> The most natural size of integer for the machine.</td></tr>
-    <tr><td>Float</td><td> A single-precision floating point value.</td></tr>
-    <tr><td>Double</td><td> A double-precision floating point value.</td></tr>
-    <tr><td>Void</td><td> Represents the absence of type.</td></tr>
-
-</table>
-</div>
-<h3>DECLARATION</h3>
-<div class="cont">
-    <p>A variable declaration provides assurance to the compiler that there is one variable existing with
-       the given type and name. A variable declaration has its meaning at the time of
-       compilation only, compiler needs actual variable declaration at the time of linking of the program.<br>
-       The syntax for declaration is:
-       <pre> data_type  variable_name ;</pre>
-        </p></div>
-<div class="code"><p><pre>
-    #include<stdio.h>
-    // Variable definition:
-    extern int a, b;
-    extern int c;
-    extern float f;
-    int main ()
-    {
-    // Variable definition:
-    int a, b;
-    int c;
-    float f;
-    // actual initialization
-     a =10;</pre></p></div>
-
-<h3 >L AND R VALUE</h3>
-<div class="cont"><p>
-    <strong>lvalue:</strong> An expression that is an lvalue may appear as either the left-hand or right-hand
-    side of an assignment.<br>
-    <strong>rvalue:</strong> An expression that is an rvalue may appear on the right- but not left-hand side
-    of an assignment.<br>
-    In an assignment the lvalue comes at the left side and rvalue at the right side.<br>
-    Ex: <span class="code"> int g=20 ;</span><br>
-    Here <strong>r value</strong> is <strong>20</strong> and the <strong>l value</strong> is the <strong>memory location/address value</strong> 
-    of the variable.</p>
-</div>
-<h2 class="hd2" id="constant">CONSTANTS</h2>
-<div class="cont">
-    <p>The constants refer to fixed values that the program may not alter during its
-       execution. These fixed values are also called literals.<br>
-       Constants can be defined by two methods:
-       <ul class="unl">
-           <li>Variable constant with help of <strong>const</strong> keyword</li>
-           <li>Constants with <strong>#define</strong> preprocessor</li>
-       </ul></div>
-    <h3 >const</h3>
-    <div class="cont">
-        Variable basic data types like an <strong>integer</strong> constant, a <strong>floating</strong>
-        constant, a <strong>character</strong> constant, or a string literal can be declared with the help of beow mentioned syntax.<br>
-        Syntax : <span class="code"> const data_type variable_name;</span></p>
-    </div>
-    <div class="code">
-        <pre>#include <stdio.h>
+      <h3 id="definition">Variable Definition in C++</h3>
+      <div class="cont">
+        <p>
+          A variable definition tells the compiler where and how much storage
+          to create for the variable. A variable definition specifies a data
+          type, and contains a list of one or more variables of that type as
+          follows:
+        </p>
+        <p>Variable names can contain alphabets numbers and underscore. Variable name never starts with a 
+        number and its case sensitive also. These are the predefined types :</p>
+ </div>
+ <div>
+ <table  class="table" border="2">
+     <tr><th>TYPE</th><th>DESCRIPTION</th></tr>
+     <tr><td>Char</td><td> Typically a single octet(one byte). This is an integer type.</td></tr>
+     <tr><td>Int</td><td> The most natural size of integer for the machine.</td></tr>
+     <tr><td>Float</td><td> A single-precision floating point value.</td></tr>
+     <tr><td>Double</td><td> A double-precision floating point value.</td></tr>
+     <tr><td>Void</td><td> Represents the absence of type.</td></tr>
+ 
+ </table>
+ </div>
+      <div class="code">
+        <pre>type variable_list;</pre>
+      </div>
+      <div class="cont">
+        <p>
+          Here, type must be a valid C++ data type including char, w_char,
+          int, float, double, bool or any user-defined object, etc., and
+          variable_list may consist of one or more identifier names separated
+          by commas. Some valid declarations are shown here:
+        </p>
+      </div>
+      <div class="code">
+        <pre>
+int i, j, k;
+char c, ch;
+float f, salary;
+double d;
+</pre
+        >
+      </div>
+      <div class="cont">
+        <p>
+          The line int i, j, k; both declares and defines the variables i, j
+          and k; which instructs the compiler to create variables named i, j
+          and k of type int.<br />
+          Variables can be initialized (assigned an initial value) in their
+          declaration. The initializer consists of an equal sign followed by a
+          constant expression as follows:
+        </p>
+      </div>
+      <div class="code">
+        <pre>type variable_name = value;</pre>
+      </div>
+      <div class="cont">
+        <p>Some examples are:</p>
+      </div>
+      <div class="code">
+        <pre>extern int d = 3, f = 5;    <i> // declaration of d and f.</i>
+int d = 3, f = 5;           <i> // definition and initializing d and f.</i>
+byte z = 22;                <i> // definition and initializes z.</i>
+char x = 'x';               <i> // the variable x has the value 'x'.</i>
+</pre>
+      </div>
+      <h3 id="declaration">Variable Declaration in C++</h3>
+      <div class="cont">
+        <p>
+          A variable declaration provides assurance to the compiler that there
+          is one variable existing with the given type and name so that
+          compiler proceed for further compilation without needing complete
+          detail about the variable. A variable declaration has its meaning at
+          the time of compilation only, compiler needs actual variable
+          declaration at the time of linking of the program.<br />A variable
+          declaration is useful when you are using multiple files and you
+          define your variable in one of the files which will be available at
+          the time of linking of the program. You will use extern keyword to
+          declare a variable at any place. Though you can declare a variable
+          multiple times in your C++ program, but it can be defined only once
+          in a file, a function or a block of code.<br />example:
+        </p>
+      </div>
+      <div class="code">
+        <pre>#include &lt;iostream&gt;
+using namespace std;
+<i>// Variable declaration:</i>
+extern int a, b;
+extern int c;
+extern float f;             
+int main ()
+{
+  <i>// Variable definition:</i>
+  int a, b;
+  int c;
+  float f;
+  <i>// actual initialization</i>
+  a = 10;
+  b = 20;
+  c = a + b;
+  cout << c << endl ;
+  f = 70.0/3.0;
+  cout << f << endl ;
+  return 0
+}
+</pre>
+      </div>
+      <div class="cont">
+        <p>
+          Same concept applies on function declaration where you provide a
+          function name at the time of its declaration and its actual
+          definition can be given anywhere else. For example:
+        </p>
+      </div>
+      <div class="code">
+        <pre>
+<i>// function declaration</i>
+int func();
 int main()
 {
-const int LENGTH = 10;
-const int WIDTH = 5;
-const char NEWLINE = '\n';
-int area;
-           
-area = LENGTH * WIDTH;
-printf("value of area : %d", area);
-printf("%c", NEWLINE);
-return 0;
-}</pre>
-    </div><span class="cont">Output: value of area : 50</span>
-    <h3 class="hd3" id="define">#define</h3>
-    <div class="cont">
-        <p>This is used in code for making general constant value where the value assigned to the quantity which could be anything.<br></p>
-        <span class="code">#define pi 3.14159</span>
-    </div>
+  <i>// function call</i>
+  int i = func();
+}
+<i>// function definition</i>
+int func()
+{
+  return 0;
+}                
+          </pre>
+      </div>
+      <h3 id="rlvalues">Lvalues and Rvalues</h3>
+      <div class="cont">
+        <p>There are two kinds of expressions in C++:</p>
+      </div>
+      <div class="unl">
+        <ul>
+          <li>
+            <b>lvalue</b> : Expressions that refer to a memory location is
+            called "lvalue" expression. An lvalue may appear as either the
+            left-hand or right-hand side of an assignment.
+          </li>
+          <li>
+            <b>rvalue</b> : The term rvalue refers to a data value that is
+            stored at some address in memory. An rvalue is an expression that
+            cannot have a value assigned to it which means an rvalue may
+            appear on the right- but not left-hand side of an
+            assignment.Variables are lvalues and so may appear on the
+            left-hand side of an assignment.
+          </li>
+        </ul>
+      </div>
+      <h3 id="local">Local Variables</h3>
+      <div class="cont">
+        <p>
+          Variables that are declared inside a function or block are local
+          variables. They can be used only by statements that are inside that
+          function or block of code. Local variables are not known to
+          functions outside their own. Following is the example using local
+          variables:
+        </p>
+      </div>
+      <div class="code">
+        <pre>#include &lt;iostream&gt;
+using namespace std;
+int main ()
+{
+  <i>// Local variable declaration:</i>
+  int a, b;
+  int c;
+  <i>// actual initialization</i>
+  a = 10;
+  b = 20;
+  c = a + b;
+  cout << c;
+  return 0;
+}
+          </pre>
+      </div>
+      <h3 id="global">GlobalVariables</h3>
+      <div class="cont">
+        <p>
+          Global variables are defined outside of all the functions, usually
+          on top of the program. The global variables will hold their value
+          throughout the life-time of your program.<br />
+          A global variable can be accessed by any function. That is, a global
+          variable is available for use throughout your entire program after
+          its declaration. Following is the example using global and local
+          variables:
+        </p>
+      </div>
+      <div class="code">
+        <pre>#include &lt;iostream&gt;
+using namespace std;
+<i>// Global variable declaration:</i>
+int g;
+int main ()
+{
+  <i>// Local variable declaration:</i>
+  int a, b;
+  <i>// actual initialization</i>
+  a = 10;
+  b = 20;
+  g = a + b;
+  cout << g;
+  return 0;
+}                         
+</pre>
+
+        <pre>#include &lt;iostream&gt;
+using namespace std;
+<i>// Global variable declaration:</i>
+int g = 20;
+int main ()
+{
+  <i>// Local variable declaration:</i>
+  int g = 10;
+  cout << g;
+  return 0;
+}
+          </pre>
+      </div>
+
   </div>
 </div>
         
