@@ -28,14 +28,14 @@ function checkPassword()
   {
     localStorage.setItem('flag',1);
     alert("Login was Successful, Welcome Back!");
-    window.open('../../TechNoJitsu.html');    
+    window.open('/TechNoJitsu.html');    
   }
   else
   if(document.getElementById("name").value == localStorage.getItem('username2') && document.getElementById("password").value == localStorage.getItem('password2'))
   {
     localStorage.setItem('flag',2);
     alert("Login was Successful, Welcome Back!");
-    window.open('../TechNoJitsu.html');  
+    window.open('/TechNoJitsu.html');  
   }
   else
   {
