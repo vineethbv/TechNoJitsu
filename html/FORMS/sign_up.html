@@ -72,7 +72,7 @@
     <div class="form-row">
       <div class="col-md-4">
         <label for="firstName " >First Name:<span class="required"></span> </label>
-        <input type="text"  pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control" title="Use only alphabets,digits and underscore" placeholder="Enter first name" required>
+        <input type="text" id="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control" title="Use only alphabets,digits and underscore" placeholder="Enter first name" required>
       </div>
       <div class="col-md-4">
         <label for="lastName" >Last Name: <span class="required"></span> </label>
@@ -125,7 +125,7 @@
     <a class="btn btn-primary btn-block  btncss"  title="Already have an account?" href="../../html/FORMS/sign_In.html ">Login</a>
     </div>
     <div class="form-group col-md-7">
-      <button type="submit" id="login" class="btn btn-success btn-block btncss " onclick="createAcct()">Register</button>
+      <button type="button" id="login" class="btn btn-success btn-block btncss " onclick="createAcct()">Register</button>
     </div>
    </div>
    
@@ -135,6 +135,7 @@
   </fieldset>
 </div>
 
+</div>  
 
  
   <canvas class="background"></canvas>

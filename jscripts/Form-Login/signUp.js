@@ -12,5 +12,20 @@ function passwordVerify()
     }
 }
 function createAcct(){
-    localStorage.setItem("passCheck",0);
+    if(localStorage.getItem("passCheck")==0 )
+    {
+        alert("Not Filled Correctly! ");
+    }
+    else
+    {
+        var user=document.getElementById("username").value;
+        var pass=document.getElementById("password").value;
+        localStorage.setItem('username2',user);
+        localStorage.setItem('password2',pass);
+        localStorage.setItem('flag',2);
+        alert("Thank You For Creating An Account! ");
+        window.open('/TechNoJitsu.html','_self');  
+
+    }
+   
 }
