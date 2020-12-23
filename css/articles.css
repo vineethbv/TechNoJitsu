@@ -1,0 +1,25 @@
+.artMain {
+    margin: auto;
+    width: 100% !important;
+    height: 500px !important;
+    padding: 10px;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    transform: translateY(250px);
+}
+
+.item {
+    height: 600px;
+    padding-bottom: 20px;
+}
+
+.artMainCont {
+    color: rgb(249, 253, 252) !important;
+    font-family: "Josefin Sans", sans-serif !important;
+}
