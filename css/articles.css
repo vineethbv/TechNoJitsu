@@ -33,6 +33,11 @@ footer {
 .item {
     height: 600px;
     padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.item active {
+    border-radius: 20px;
 }
 
 .artMainCont {
@@ -45,6 +50,11 @@ footer {
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
+    text-decoration: underline;
+}
+
+.carousel-inner {
+    border-radius: 20px;
 }
 
 .ArtMain {
@@ -52,4 +62,9 @@ footer {
     border-radius: 18px;
     transform: translateY(34px);
     margin-bottom: -85px;
+}
+
+.right,
+.left {
+    border-radius: 20px;
 }
